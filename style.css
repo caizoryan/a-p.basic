@@ -1,0 +1,159 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+	background: #eee;
+}
+
+.root {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+}
+
+
+/* .root > * { */
+/* 	padding: 1em; */
+/* } */
+
+.bar {
+	position: fixed;
+	z-index: 2;
+	bottom: 1em;
+	left: 1em;
+	width: 60vw;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.root {}
+
+.hindi {
+	color: orange;
+	font-size: 1.5em;
+	background-color: #fff0;
+	text-decoration: none;
+	margin-bottom: 0;
+}
+
+h4 {
+	margin-top: 1em;
+	font-weight: 100;
+	font-family: ABC Oracle Unlicensed Trial;
+	font-family: ABC ROM Condensed Unlicensed Trial;
+	font-size: 2em;
+	text-decoration: underline;
+	background: white;
+	width: max-content;
+	margin-bottom: 1em;
+}
+
+.about {
+	max-width: 500px;
+	z-index: 21;
+	top: 1em;
+	left: 1em;
+	width: 30vw;
+	padding: 1em;
+}
+
+.project-list {
+	font-family: sans-serif;
+	;
+}
+
+p.project {
+	margin: .1em 0;
+}
+
+p.project:hover {
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.img-container {
+	margin-bottom: 1em;
+	/* margin-left: auto; */
+}
+
+.text-container {
+	max-height: 80vh;
+	max-width: 70ch;
+	/* margin: 1em; */
+	background-color: white;
+	/* margin-left: auto; */
+}
+
+.ignore img,
+.ignore video {
+	max-height: 80vh;
+	max-width: 65vw;
+}
+
+.ignore>* {
+	/* margin-left: auto; */
+	/* transform: scaleY(-1); */
+}
+
+.right {
+	pointer-events: none;
+}
+
+.ignore {
+	/* transform: scaleY(-1); */
+	z-index: 1;
+	top: 0;
+	right: 0;
+	width: 70vw;
+	height: 100vh;
+	overflow-y: scroll;
+	display: flex;
+	background: #ddd;
+	padding: 1em;
+	flex-direction: column;
+}
+
+span.invisible {
+	opacity: 0;
+}
+
+span.invisible:hover {
+	opacity: 1;
+}
+
+.medium {
+	width: 40px;
+}
+
+.medium:hover {
+	width: 600px;
+}
+
+@media only screen and (max-width: 700px) {
+	.root {
+		display: flex;
+		flex-direction: column;
+		overflow-y: scroll;
+	}
+
+	.ignore {
+		width: 100vw;
+		height: auto;
+		overflow-y: initial;
+	}
+
+	.about {
+		width: 100vw;
+	}
+
+	.ignore img,
+	.ignore video {
+		max-height: 80vh;
+		max-width: 90vw;
+	}
+}
