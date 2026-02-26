@@ -28,73 +28,107 @@ get_channel("projects-hlemx_lvnvw").then((res) => {
 	init(res);
 });
 
-let projectggs = dom(["span.invisible", "GGGGGGGGGGG"]);
+let open_project = (channel) => {
+	get_channel(channel.slug).then((res) => {
+		ignore.innerHTML = "";
+		res.contents = res.contents.sort((a, b) => b.position - a.position);
+		console.log("Contents ", res.contents);
+
+		let head = dom("h4", channel.title.slice(2));
+		ignore.appendChild(head);
+
+		res.contents.forEach((block) => {
+			if (block.class == "Text") {
+				console.log(block.content_html);
+				let img = dom(".text-container");
+				img.innerHTML = block.content_html;
+				ignore.appendChild(img);
+			}
+			if (block.class == "Image") {
+				let img = dom(".img-container", ["img", {
+					src: block.image.display.url,
+				}]);
+				ignore.appendChild(img);
+			}
+			if (block.class == "Attachment") {
+				let img = dom(".img-container", ["video", {
+					autoplay: true,
+					muted: true,
+					src: block.attachment.url,
+				}]);
+				ignore.appendChild(img);
+			}
+		});
+	});
+};
+
+let projectEntry = (channel) =>
+	dom(
+		"p.project",
+		{ onclick: () => open_project(channel) },
+		channel.title.slice(2),
+	);
+
 let init = (channel) => {
-	projectggs.innerHTML = "";
-	let projectEntry = (channel) =>
-		dom("p.project", {
-			onclick: () => {
-				get_channel(channel.slug).then((res) => {
-					ignore.innerHTML = "";
-					res.contents = res.contents.sort((a, b) => b.position - a.position);
-					console.log("Contents ", res.contents);
-
-					let head = dom("h4", channel.title.slice(2));
-					ignore.appendChild(head);
-
-					res.contents.forEach((block) => {
-						if (block.class == "Text") {
-							console.log(block.content_html);
-							let img = dom(".text-container");
-							img.innerHTML = block.content_html;
-							ignore.appendChild(img);
-						}
-						if (block.class == "Image") {
-							let img = dom(".img-container", ["img", {
-								src: block.image.display.url,
-							}]);
-							ignore.appendChild(img);
-						}
-						if (block.class == "Attachment") {
-							let img = dom(".img-container", ["video", {
-								autoplay: true,
-								muted: true,
-								src: block.attachment.url,
-							}]);
-							ignore.appendChild(img);
-						}
-					});
-				});
-			},
-		}, channel.title.slice(2));
-
 	let projs = channel
 		.contents
 		.map((e) => projectEntry(e));
 
 	// TODO: Use this for something interesting
-	// p.forEach((e) => projectggs.appendChild(e));
 	projs.forEach((e) => project_list.appendChild(e));
 };
 
 let ignore = dom([".ignore"]);
-let bar = dom(".bar.hindi", ["p", "काम"], ["p", "जानकारी"], ["p", "अन्यत्र"]);
+
+export const CSSTransform = (x, y, width, height) => {
+	let v = `
+		position: absolute;
+		left: ${x}px;
+		top: ${y}px;`;
+
+	if (width != undefined) v += `width: ${width}px;`;
+	if (height != undefined) v += `height: ${height}px;`;
+
+	return v;
+};
+
+export const connectors = (width, height) => {
+	let unwrapFn = (v) => typeof v == "function" ? v() : v;
+
+	let connectionPoint = (x, y) => {
+		return dom(".box", {
+			style: CSSTransform(unwrapFn(x), unwrapFn(y)),
+		}, "x");
+	};
+
+	let connectionPoints = [
+		connectionPoint(-6, -6),
+		connectionPoint(width, height),
+		connectionPoint(-6, height),
+		connectionPoint(width, -6),
+	];
+
+	return connectionPoints;
+};
 
 let project_list = dom([".project-list"]);
+let boxed = (c) => [".boxed", ...c, ...connectors(80, 15)];
+
+let bar = dom([
+	".bar",
+	boxed(["Index"]),
+	boxed(["About"]),
+	boxed(["Projects"]),
+]);
+
 let about = dom([
 	".about",
-	["h4.hindi", "जानकारी"],
 	[
 		"p",
 		"Aaryan Pashine is a ",
-		projectggs,
 		"Graphic Design Student at ocad university, interested in exploring the intersection between code, design, distribution and materiality",
 	],
-
-	["h4.hindi", "काम"],
 	project_list,
-
-	["h4.hindi", "अन्यत्र"],
 	["p", "Elsewhere"],
 	["p", [
 		"a",
@@ -110,12 +144,10 @@ let about = dom([
 	["p", ["a", { href: "https://mastodon.social/@caizoryan" }, "mastodon"]],
 	["p", ["a", { href: "https://www.instagram.com/a____p.jpg/" }, "instagram"]],
 ]);
-let projects;
+
 let div = dom(
 	".root",
-	about,
-	ignore,
-	[".right"],
 	bar,
+	[".spreads", about, ignore],
 );
 document.body.appendChild(div);
