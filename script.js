@@ -1,5 +1,6 @@
 // import { memo, reactive } from "./hok.js";
 import { dom } from "./dom.js";
+import { memo, reactive } from "./hok.js";
 
 // let host = "http://localhost:3000/api";
 let host = "https://api.are.na/v2/";
@@ -70,15 +71,8 @@ let projectEntry = (channel) =>
 	);
 
 let init = (channel) => {
-	let projs = channel
-		.contents
-		.map((e) => projectEntry(e));
-
-	// TODO: Use this for something interesting
-	projs.forEach((e) => project_list.appendChild(e));
+	console.log(channel);
 };
-
-let ignore = dom([".ignore"]);
 
 export const CSSTransform = (x, y, width, height) => {
 	let v = `
@@ -111,43 +105,63 @@ export const connectors = (width, height) => {
 	return connectionPoints;
 };
 
-let project_list = dom([".project-list"]);
 let boxed = (c) => [".boxed", ...c, ...connectors(80, 15)];
 
-let bar = dom([
-	".bar",
-	boxed(["Index"]),
-	boxed(["About"]),
-	boxed(["Projects"]),
+let width = reactive(window.innerWidth);
+let columnCount = memo(() => {
+	if (width.value() < 600) return 3;
+	else if (width.value() < 900) return 4;
+	else if (width.value() < 1100) return 5;
+	else return 6;
+}, [width]);
+
+let colWidth = memo(() => width.value() / columnCount.value(), [
+	columnCount,
+	width,
 ]);
 
-let about = dom([
-	".about",
-	[
-		"p",
-		"Aaryan Pashine is a ",
-		"Graphic Design Student at ocad university, interested in exploring the intersection between code, design, distribution and materiality",
-	],
-	project_list,
-	["p", "Elsewhere"],
-	["p", [
-		"a",
-		{ href: "https://feed.a-p.space", target: "_blank" },
-		"feed.a-p.space",
-	]],
-	["p", [
-		"a",
-		{ href: "https://writing.a-p.space", target: "_blank" },
-		"writing.a-p.space",
-	]],
-	["p", ["a", { href: "https://are.na/aaryan-pashine" }, "are.na"]],
-	["p", ["a", { href: "https://mastodon.social/@caizoryan" }, "mastodon"]],
-	["p", ["a", { href: "https://www.instagram.com/a____p.jpg/" }, "instagram"]],
-]);
+let rowHeight = reactive(window.innerHeight / 6);
+let boxes = Array(100).fill(0).map((e, i) => {
+	return {
+		x: memo(() => (i % columnCount.value() * colWidth.value()), [colWidth]),
+		y: memo(() => Math.floor(i / columnCount.value()) * rowHeight.value(), [
+			columnCount,
+			rowHeight,
+		]),
+		filled: Math.random() > .5,
+	};
+});
+
+let items = ["Index", "About", "Work", "", "", "Brickhaus menu"];
+let els = boxes
+	.map((e, i) => {
+		let item = items[i] || "";
+		return ["div", {
+			style: memo(() =>
+				CSSTransform(
+					e.x.value(),
+					e.y.value(),
+					colWidth.value(),
+					rowHeight.value(),
+				) + (item != "" ? "background-color: white;" : ""), [
+				e.x,
+				e.y,
+				colWidth,
+				rowHeight,
+			]),
+		}, item];
+	});
+
+function changeSize() { }
+
+window.onresize = (e) => {
+	width.next(window.innerWidth);
+	// height.next(window.innerHeight);
+};
 
 let div = dom(
 	".root",
-	bar,
-	[".spreads", about, ignore],
+	...els,
+	// ...boxes,
 );
 document.body.appendChild(div);

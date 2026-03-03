@@ -7,6 +7,7 @@
 body {
 	font-family: monospace;
 	background: #eee;
+
 }
 
 .root {
@@ -42,6 +43,18 @@ h4 {
 	background: white;
 	width: max-content;
 	margin-bottom: 1em;
+}
+
+.test {
+	/* border: 1px solid black; */
+}
+
+.slideshow {
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
 }
 
 .about {
