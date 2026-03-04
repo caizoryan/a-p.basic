@@ -1,7 +1,5 @@
 import fs from "fs";
-import { get_channel } from "./arena.js";
-
-let host = "http://localhost:3000/api";
+import { get_channel, host } from "./arena.js";
 
 fetch(host + "/channels/" + "projects-hlemx_lvnvw")
 	.then((res) => res.json())
