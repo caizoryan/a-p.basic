@@ -7,15 +7,12 @@ let items = [
 	// ["h4", "Work"],
 ];
 
+let size = reactive("s");
 let init = (channels) => {
 	channels = channels.reverse();
 
 	let slideshow = dom([".slideshow"]);
-	// 	.sort((a, b) => Math.random() > .5 ? 1 : -1)
-	// 	.sort((a, b) => Math.random() > .5 ? 1 : -1)
-	// 	.sort((a, b) => Math.random() > .5 ? 1 : -1)
-	// 	.sort((a, b) => Math.random() > .5 ? 1 : -1)
-	// 	.sort((a, b) => Math.random() > .5 ? 1 : -1);
+
 	channels.forEach((e) => {
 		if (!e.title) return;
 		let slide;
@@ -30,17 +27,21 @@ let init = (channels) => {
 			},
 		}];
 
-		project.push([".meta", boxed(["h4", e.title.slice(2)])]);
+		project.push([
+			".meta", // boxed(["h4", e.title.slice(2)]),
+			["h4", e.title.slice(2)],
+		]);
 
+		let imgs = [];
 		if (e.contents) {
 			let count = 0;
-			let till = 0;
+			let till = 4;
 			// Math.floor(Math.random() * 4) + 2;
 			e.contents.reverse().forEach((e) => {
 				if (count > till) return;
 				if (e.class == "Image") {
 					count++;
-					project.push([".img-container", ["img", {
+					imgs.push([".img-container", ["img", {
 						src: e.image.display.url,
 					}]]);
 					slide = dom(["img", { src: e.image.display.url }]);
@@ -52,7 +53,7 @@ let init = (channels) => {
 				) {
 					console.log(e);
 					count++;
-					project.push([".img-container", ["video", {
+					imgs.push([".img-container", ["video", {
 						src: e.attachment.url,
 						autoplay: true,
 						muted: true,
@@ -68,14 +69,43 @@ let init = (channels) => {
 			});
 		}
 
+		let imgMemo = memo(
+			() => size.value() == "xl" ? imgs.slice(0, 5) : imgs.slice(0, 1),
+			[size],
+		);
+
+		project.push(imgMemo);
 		items.push(project);
 	});
 
+	let control = (
+		key,
+		text,
+	) => ["button", {
+		onclick: () => size.next(key),
+		active: memo(() => key == size.value(), [size]),
+	}, text];
+
+	let controls = [
+		".buttons",
+		control("xs", "X"),
+		control("s", "SML"),
+		control("m", "MED"),
+		control("l", "LRG"),
+		control("xl", "X"),
+	];
+
 	let div = dom(
 		".root",
-		// slideshow,
-		[".bar", "Index", "About", "Work"],
-		[".projects", ...items],
+		[".about", [
+			"p",
+			"Aaryan Pashine is a Graphic Designer and Programmer based in Toronto, Canada.",
+		], [".links", ["h4", "Links"], [
+			"p",
+			"Instagram",
+		], ["p", "Are.na"]]],
+		controls,
+		[".projects", { size }, ...items],
 	);
 	document.body.appendChild(div);
 };
@@ -104,16 +134,16 @@ export const connectors = (width, height) => {
 	};
 
 	let connectionPoints = [
-		connectionPoint(-6, -6),
-		connectionPoint(width / 2 - 6, -6),
-		connectionPoint(-6, height / 2 - 6),
+		connectionPoint(-5, -5),
+		connectionPoint(width / 2 - 5, -5),
+		connectionPoint(-5, height / 2 - 5),
 
-		connectionPoint(width - 6, height / 2 - 6),
-		connectionPoint(width / 2 - 6, height - 6),
+		connectionPoint(width - 5, height / 2 - 5),
+		connectionPoint(width / 2 - 5, height - 5),
 
-		connectionPoint(width - 6, height - 6),
-		connectionPoint(-6, height - 6),
-		connectionPoint(width - 6, -6),
+		connectionPoint(width - 5, height - 5),
+		connectionPoint(-5, height - 5),
+		connectionPoint(width - 5, -5),
 	];
 
 	return connectionPoints;
