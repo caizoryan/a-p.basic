@@ -1,10 +1,20 @@
-// import fs from "fs";
-//
-// let host = "http://localhost:3000/api";
-//
-// fetch(host + "/channels/")
-// 	.channel("image-lab")
-// 	.get()
-// 	.then((channel) => {
-// 		fs.writeFileSync("./gallerydata.json", JSON.stringify(channel, null, 2));
-// 	});
+import fs from "fs";
+import { get_channel } from "./arena.js";
+
+let host = "http://localhost:3000/api";
+
+fetch(host + "/channels/" + "projects-hlemx_lvnvw")
+	.then((res) => res.json())
+	.then(async (channel) => {
+		let projects = [];
+		let projects_fetch = channel.contents;
+
+		for (let i = 0; i < projects_fetch.length; i++) {
+			await get_channel(projects_fetch[i].id).then((res) => {
+				console.log(res.title);
+				projects.push(res);
+			});
+		}
+
+		fs.writeFileSync("./data.json", JSON.stringify(projects, null, 2));
+	});

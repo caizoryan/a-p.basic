@@ -1,78 +1,57 @@
-// import { memo, reactive } from "./hok.js";
 import { dom } from "./dom.js";
 import { memo, reactive } from "./hok.js";
 
-// let host = "http://localhost:3000/api";
-let host = "https://api.are.na/v2/";
-let options = { headers: { cache: "no-store" } };
+let items = [
+	// ["h4", "Index"],
+	// ["h4", "About"],
+	// ["h4", "Work"],
+];
 
-let channels = {};
-const fetch_json = (link, options) =>
-	fetch(link, options).then((r) => r.json());
-const get_channel = (slug) => {
-	if (channels[slug]) {
-		return new Promise((resolve, reject) => {
-			resolve(channels[slug]);
-		});
-	}
-	console.log("getting", slug);
-	return fetch_json(host + "/channels/" + slug + "?per=100", options).then(
-		(res) => {
-			channels[res.slug] = res;
-			return res;
-		},
-	);
-};
+let init = (channels) => {
+	channels = channels
+		.sort((a, b) => Math.random() > .5 ? 1 : -1)
+		.sort((a, b) => Math.random() > .5 ? 1 : -1)
+		.sort((a, b) => Math.random() > .5 ? 1 : -1)
+		.sort((a, b) => Math.random() > .5 ? 1 : -1)
+		.sort((a, b) => Math.random() > .5 ? 1 : -1);
+	channels.forEach((e) => {
+		if (!e.title) return;
 
-const get_block = (id) => fetch_json(host + "/blocks/" + id, options);
-get_channel("projects-hlemx_lvnvw").then((res) => {
-	init(res);
-});
+		if (e.contents) {
+			let count = 0;
+			let till = 0;
+			// Math.floor(Math.random() * 4) + 2;
+			e.contents.reverse().forEach((e) => {
+				if (count > till) return;
+				if (e.class == "Image") {
+					count++;
+					items.push([".img-container", ["img", { src: e.image.thumb.url }]]);
+				}
 
-let open_project = (channel) => {
-	get_channel(channel.slug).then((res) => {
-		ignore.innerHTML = "";
-		res.contents = res.contents.sort((a, b) => b.position - a.position);
-		console.log("Contents ", res.contents);
-
-		let head = dom("h4", channel.title.slice(2));
-		ignore.appendChild(head);
-
-		res.contents.forEach((block) => {
-			if (block.class == "Text") {
-				console.log(block.content_html);
-				let img = dom(".text-container");
-				img.innerHTML = block.content_html;
-				ignore.appendChild(img);
-			}
-			if (block.class == "Image") {
-				let img = dom(".img-container", ["img", {
-					src: block.image.display.url,
-				}]);
-				ignore.appendChild(img);
-			}
-			if (block.class == "Attachment") {
-				let img = dom(".img-container", ["video", {
-					autoplay: true,
-					muted: true,
-					src: block.attachment.url,
-				}]);
-				ignore.appendChild(img);
-			}
-		});
+				if (
+					e.class == "Attachment"
+					// && e.attachment.extension == "mp4"
+				) {
+					console.log(e);
+					count++;
+					items.push([".img-container", ["video", {
+						src: e.attachment.url,
+						autoplay: true,
+						muted: true,
+					}]]);
+				}
+			});
+		}
 	});
-};
 
-let projectEntry = (channel) =>
-	dom(
-		"p.project",
-		{ onclick: () => open_project(channel) },
-		channel.title.slice(2),
+	let div = dom(
+		".root",
+		...items,
 	);
-
-let init = (channel) => {
-	console.log(channel);
+	document.body.appendChild(div);
 };
+
+fetch("./data.json").then((res) => res.json()).then(init);
 
 export const CSSTransform = (x, y, width, height) => {
 	let v = `
@@ -106,62 +85,3 @@ export const connectors = (width, height) => {
 };
 
 let boxed = (c) => [".boxed", ...c, ...connectors(80, 15)];
-
-let width = reactive(window.innerWidth);
-let columnCount = memo(() => {
-	if (width.value() < 600) return 3;
-	else if (width.value() < 900) return 4;
-	else if (width.value() < 1100) return 5;
-	else return 6;
-}, [width]);
-
-let colWidth = memo(() => width.value() / columnCount.value(), [
-	columnCount,
-	width,
-]);
-
-let rowHeight = reactive(window.innerHeight / 6);
-let boxes = Array(100).fill(0).map((e, i) => {
-	return {
-		x: memo(() => (i % columnCount.value() * colWidth.value()), [colWidth]),
-		y: memo(() => Math.floor(i / columnCount.value()) * rowHeight.value(), [
-			columnCount,
-			rowHeight,
-		]),
-		filled: Math.random() > .5,
-	};
-});
-
-let items = ["Index", "About", "Work", "", "", "Brickhaus menu"];
-let els = boxes
-	.map((e, i) => {
-		let item = items[i] || "";
-		return ["div", {
-			style: memo(() =>
-				CSSTransform(
-					e.x.value(),
-					e.y.value(),
-					colWidth.value(),
-					rowHeight.value(),
-				) + (item != "" ? "background-color: white;" : ""), [
-				e.x,
-				e.y,
-				colWidth,
-				rowHeight,
-			]),
-		}, item];
-	});
-
-function changeSize() { }
-
-window.onresize = (e) => {
-	width.next(window.innerWidth);
-	// height.next(window.innerHeight);
-};
-
-let div = dom(
-	".root",
-	...els,
-	// ...boxes,
-);
-document.body.appendChild(div);
