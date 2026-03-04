@@ -8,15 +8,25 @@ let items = [
 ];
 
 let size = reactive("s");
+let page = reactive("");
+
 let init = (channels) => {
 	channels = channels.reverse();
 
 	let slideshow = dom([".slideshow"]);
+	let mainPage = dom([".page", {
+		open: memo(() => page.value() != "" ? "true" : "false", [page]),
+	}, ["button", {
+		onclick: () => page.next(""),
+	}, "x"], ["h4", page]]);
 
 	channels.forEach((e) => {
 		if (!e.title) return;
 		let slide;
 		let project = [".project", {
+			onclick: () => {
+				page.next(e.slug);
+			},
 			onmouseover: (e) => {
 				slideshow.innerHTML = "";
 				slideshow.appendChild(slide);
@@ -95,17 +105,33 @@ let init = (channels) => {
 		control("xl", "X"),
 	];
 
+	let link = (
+		link,
+		text,
+	) => ["p", ["a", { href: link, target: "_blank" }, text]];
+
+	let links = [
+		".links",
+		link("https://writing.a-p.space", "Writing"),
+		link("https://feed.a-p.space", "Feed"),
+		link("https://www.are.na/aaryan-pashine/index", "Are.na"),
+		link("https://github.com/caizoryan", "Github"),
+		link("https://www.instagram.com/a____p.jpg/", "Instagram"),
+	];
+
+	let About = [".about", [
+		"p",
+		"Aaryan Pashine is a Graphic Designer and Programmer based in Toronto, Canada.",
+	], links];
+
+	let Projects = [".projects", { size }, ...items];
+
 	let div = dom(
 		".root",
-		[".about", [
-			"p",
-			"Aaryan Pashine is a Graphic Designer and Programmer based in Toronto, Canada.",
-		], [".links", ["h4", "Links"], [
-			"p",
-			"Instagram",
-		], ["p", "Are.na"]]],
+		About,
 		controls,
-		[".projects", { size }, ...items],
+		Projects,
+		mainPage,
 	);
 	document.body.appendChild(div);
 };
