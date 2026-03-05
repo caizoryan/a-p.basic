@@ -200,8 +200,7 @@ a {
 }
 
 .project[tagged='false'] {
-	display: none;
-	position: fixed;
+	display: none !important;
 }
 
 button[selected='true'] {
