@@ -405,26 +405,33 @@ video {
 	/* max-height: 100%; */
 }
 
-@media only screen and (max-width: 700px) {
-	.root {
-		display: flex;
-		flex-direction: column;
-		overflow-y: scroll;
+@media only screen and (max-width: 1000px) {
+	body {
+		font-size: 22px;
 	}
 
-	.ignore {
-		width: 100vw;
-		height: auto;
-		overflow-y: initial;
+	button {
+		font-size: 18px;
 	}
 
 	.about {
-		width: 100vw;
+		width: 95%;
 	}
 
-	.ignore img,
-	.ignore video {
-		max-height: 80vh;
-		max-width: 90vw;
+	.root>.buttons {
+		display: none;
 	}
+
+	.projects[size='xs'],
+	.projects[size='s'],
+	.projects[size='m'],
+	.projects[size='xl'],
+	.projects[size='l'] {
+		grid-template-columns: 100%;
+	}
+
+	.page {
+		width: 94vw;
+	}
+
 }
