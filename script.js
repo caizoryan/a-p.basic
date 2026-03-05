@@ -1,5 +1,6 @@
 import { dom } from "./dom.js";
 import { memo, reactive } from "./hok.js";
+import { MD } from "./md.js";
 
 let items = [
 	// ["h4", "Index"],
@@ -49,6 +50,9 @@ let init = (channels) => {
 			// Math.floor(Math.random() * 4) + 2;
 			e.contents.reverse().forEach((e) => {
 				if (count > till) return;
+				if (e.class == "Text") {
+					imgs.push([".text-container", ...MD(e.content)]);
+				}
 				if (e.class == "Image") {
 					count++;
 					imgs.push([".img-container", ["img", {
@@ -69,6 +73,7 @@ let init = (channels) => {
 						muted: true,
 						loop: true,
 					}]]);
+
 					slide = dom(["video", {
 						src: e.attachment.url,
 						autoplay: true,
@@ -80,7 +85,10 @@ let init = (channels) => {
 		}
 
 		let imgMemo = memo(
-			() => size.value() == "xl" ? imgs.slice(0, 5) : imgs.slice(0, 1),
+			() =>
+				size.value() == "xl"
+					? imgs.slice(0, 5)
+					: imgs.filter((e) => e[0] != ".text-container").slice(0, 1),
 			[size],
 		);
 

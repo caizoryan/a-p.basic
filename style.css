@@ -3,14 +3,18 @@
 	margin: 0;
 	box-sizing: border-box;
 
-	scrollbar-color: black white;
-	scrollbar-width: thin;
+	scrollbar-color: black #fff0;
 }
 
 body {
 	font-family: sans-serif;
 	background: #eee;
 
+}
+
+p {
+	line-height: 1.3em;
+	margin-bottom: .4em;
 }
 
 a {
@@ -96,11 +100,13 @@ a {
 	display: flex;
 	overflow-x: scroll;
 	height: 405px;
+	border-top: 1px solid #2228;
 }
 
 .projects[size='xl'] .project .meta {
 	opacity: 1;
 	min-width: 300px;
+	border-bottom: none;
 }
 
 .projects[size='xl'] .project .img-container {
@@ -228,8 +234,11 @@ h3 {
 }
 
 .text-container {
-	max-height: 80vh;
-	max-width: 70ch;
+	width: 400px;
+	min-width: 400px;
+	padding: 0 1em;
+	height: min-content;
+	margin-right: 1em;
 }
 
 .invisible {
