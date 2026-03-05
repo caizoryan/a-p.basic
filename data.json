@@ -3,7 +3,7 @@
     "id": 3284222,
     "title": "✱ Annotated Bibliography",
     "created_at": "2024-10-31T01:55:36.368Z",
-    "updated_at": "2026-02-27T01:02:35.569Z",
+    "updated_at": "2026-03-05T05:30:37.260Z",
     "added_to_at": "2026-02-05T03:14:20.660Z",
     "published": true,
     "open": false,
@@ -19,10 +19,10 @@
       "AWSAccessKeyId": "AKIAYPX7J2CK5GR4GF5E",
       "bucket": "https://s3.amazonaws.com/arena_images-temp/",
       "success_action_status": "201",
-      "policy": "eydleHBpcmF0aW9uJzogJzIwMjYtMDMtMTJUMDQ6MTg6MjAuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
+      "policy": "eydleHBpcmF0aW9uJzogJzIwMjYtMDMtMTJUMDU6MzA6NDMuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
       "acl": "public-read",
-      "signature": "14w+LjmWXU0TtZYlnaJXLDi4CvU=",
-      "expires": "2026-03-12T04:18:20.000Z"
+      "signature": "/B6nBq0iDH+MyCTCY35sNLo1GaQ=",
+      "expires": "2026-03-12T05:30:43.000Z"
     },
     "contents": [
       {
@@ -11107,6 +11107,698 @@
     }
   },
   {
+    "id": 4897397,
+    "title": "✱ FN Roll",
+    "created_at": "2026-03-05T04:49:39.332Z",
+    "updated_at": "2026-03-05T05:08:47.411Z",
+    "added_to_at": "2026-03-05T05:06:22.143Z",
+    "published": true,
+    "open": false,
+    "collaboration": false,
+    "collaborator_count": 0,
+    "slug": "fn-roll",
+    "length": 7,
+    "kind": "default",
+    "status": "closed",
+    "user_id": 353398,
+    "manifest": {
+      "key": "uploads/:uuid/${filename}",
+      "AWSAccessKeyId": "AKIAYPX7J2CK5GR4GF5E",
+      "bucket": "https://s3.amazonaws.com/arena_images-temp/",
+      "success_action_status": "201",
+      "policy": "eydleHBpcmF0aW9uJzogJzIwMjYtMDMtMTJUMDU6MzA6NDQuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
+      "acl": "public-read",
+      "signature": "B+YUtG2z2+GDQPJq0Fl3QYunv5E=",
+      "expires": "2026-03-12T05:30:44.000Z"
+    },
+    "contents": [
+      {
+        "title": "4_centrifugal_poster.jpg",
+        "updated_at": "2026-03-05T04:50:50.672Z",
+        "created_at": "2026-03-05T04:49:42.964Z",
+        "state": "available",
+        "comment_count": 0,
+        "generated_title": "4_centrifugal_poster.jpg",
+        "content_html": "",
+        "description_html": "",
+        "visibility": "public",
+        "content": "",
+        "description": "",
+        "source": null,
+        "image": {
+          "filename": "6c6b4b16acdd3f26de0770a8b23586ec.jpg",
+          "content_type": "image/jpeg",
+          "updated_at": "2026-03-05T04:49:44.708Z",
+          "thumb": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0My9vcmlnaW5hbF82YzZiNGIxNmFjZGQzZjI2ZGUwNzcwYThiMjM1ODZlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "square": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0My9vcmlnaW5hbF82YzZiNGIxNmFjZGQzZjI2ZGUwNzcwYThiMjM1ODZlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "display": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0My9vcmlnaW5hbF82YzZiNGIxNmFjZGQzZjI2ZGUwNzcwYThiMjM1ODZlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "large": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0My9vcmlnaW5hbF82YzZiNGIxNmFjZGQzZjI2ZGUwNzcwYThiMjM1ODZlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "original": {
+            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44157943/original_6c6b4b16acdd3f26de0770a8b23586ec.jpg?1772686184?bc=0",
+            "file_size": 1448503,
+            "file_size_display": "1.38 MB"
+          }
+        },
+        "embed": null,
+        "attachment": null,
+        "metadata": {
+          "automated_nsfw": "false"
+        },
+        "id": 44157943,
+        "base_class": "Block",
+        "class": "Image",
+        "user": {
+          "created_at": "2022-03-22T18:52:12.868Z",
+          "slug": "aaryan-pashine",
+          "username": "Aaryan Pashine",
+          "first_name": "Aaryan",
+          "last_name": "Pashine",
+          "full_name": "Aaryan Pashine",
+          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "avatar_image": {
+            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
+          },
+          "channel_count": 788,
+          "following_count": 269,
+          "profile_id": 1491607,
+          "follower_count": 80,
+          "initials": "AP",
+          "can_index": true,
+          "metadata": {
+            "description": null
+          },
+          "is_premium": true,
+          "is_lifetime_premium": false,
+          "is_supporter": false,
+          "is_exceeding_connections_limit": false,
+          "is_confirmed": true,
+          "is_pending_reconfirmation": false,
+          "is_pending_confirmation": false,
+          "badge": "premium",
+          "id": 353398,
+          "base_class": "User",
+          "class": "User"
+        },
+        "position": 1,
+        "selected": false,
+        "connection_id": 92922153,
+        "connected_at": "2026-03-05T04:49:43.010Z",
+        "connected_by_user_id": 353398,
+        "connected_by_username": "Aaryan Pashine",
+        "connected_by_user_slug": "aaryan-pashine"
+      },
+      {
+        "title": "2_centrifugal_poster.jpg",
+        "updated_at": "2026-03-05T04:49:46.372Z",
+        "created_at": "2026-03-05T04:49:42.885Z",
+        "state": "available",
+        "comment_count": 0,
+        "generated_title": "2_centrifugal_poster.jpg",
+        "content_html": "<p>chemical conce<br>\nin the blood</p>",
+        "description_html": "",
+        "visibility": "public",
+        "content": "chemical conce\nin the blood\n\n",
+        "description": "",
+        "source": null,
+        "image": {
+          "filename": "a9b9672eb333e3d764ac34600339df58.jpg",
+          "content_type": "image/jpeg",
+          "updated_at": "2026-03-05T04:49:44.077Z",
+          "thumb": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0MS9vcmlnaW5hbF9hOWI5NjcyZWIzMzNlM2Q3NjRhYzM0NjAwMzM5ZGY1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "square": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0MS9vcmlnaW5hbF9hOWI5NjcyZWIzMzNlM2Q3NjRhYzM0NjAwMzM5ZGY1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "display": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0MS9vcmlnaW5hbF9hOWI5NjcyZWIzMzNlM2Q3NjRhYzM0NjAwMzM5ZGY1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "large": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0MS9vcmlnaW5hbF9hOWI5NjcyZWIzMzNlM2Q3NjRhYzM0NjAwMzM5ZGY1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "original": {
+            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44157941/original_a9b9672eb333e3d764ac34600339df58.jpg?1772686184?bc=0",
+            "file_size": 644722,
+            "file_size_display": "630 KB"
+          }
+        },
+        "embed": null,
+        "attachment": null,
+        "metadata": {
+          "automated_nsfw": "false"
+        },
+        "id": 44157941,
+        "base_class": "Block",
+        "class": "Image",
+        "user": {
+          "created_at": "2022-03-22T18:52:12.868Z",
+          "slug": "aaryan-pashine",
+          "username": "Aaryan Pashine",
+          "first_name": "Aaryan",
+          "last_name": "Pashine",
+          "full_name": "Aaryan Pashine",
+          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "avatar_image": {
+            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
+          },
+          "channel_count": 788,
+          "following_count": 269,
+          "profile_id": 1491607,
+          "follower_count": 80,
+          "initials": "AP",
+          "can_index": true,
+          "metadata": {
+            "description": null
+          },
+          "is_premium": true,
+          "is_lifetime_premium": false,
+          "is_supporter": false,
+          "is_exceeding_connections_limit": false,
+          "is_confirmed": true,
+          "is_pending_reconfirmation": false,
+          "is_pending_confirmation": false,
+          "badge": "premium",
+          "id": 353398,
+          "base_class": "User",
+          "class": "User"
+        },
+        "position": 2,
+        "selected": false,
+        "connection_id": 92922151,
+        "connected_at": "2026-03-05T04:49:42.929Z",
+        "connected_by_user_id": 353398,
+        "connected_by_username": "Aaryan Pashine",
+        "connected_by_user_slug": "aaryan-pashine"
+      },
+      {
+        "title": "Home",
+        "updated_at": "2026-03-05T04:50:09.169Z",
+        "created_at": "2026-03-05T04:50:05.244Z",
+        "state": "available",
+        "comment_count": 0,
+        "generated_title": "Home",
+        "content_html": "",
+        "description_html": "",
+        "visibility": "public",
+        "content": "",
+        "description": "",
+        "source": {
+          "url": "https://caizoryan.github.io/fn-specimen/modulator/index.html",
+          "title": "Home",
+          "provider": {
+            "name": "github.io",
+            "url": "caizoryan.github.io"
+          }
+        },
+        "image": {
+          "filename": "c47abab962e09fec9a4b7d6f760ec9db.png",
+          "content_type": "image/png",
+          "updated_at": "2026-03-05T04:50:08.568Z",
+          "thumb": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0OC9vcmlnaW5hbF9jNDdhYmFiOTYyZTA5ZmVjOWE0YjdkNmY3NjBlYzlkYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "square": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0OC9vcmlnaW5hbF9jNDdhYmFiOTYyZTA5ZmVjOWE0YjdkNmY3NjBlYzlkYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "display": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0OC9vcmlnaW5hbF9jNDdhYmFiOTYyZTA5ZmVjOWE0YjdkNmY3NjBlYzlkYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "large": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0OC9vcmlnaW5hbF9jNDdhYmFiOTYyZTA5ZmVjOWE0YjdkNmY3NjBlYzlkYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "original": {
+            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44157948/original_c47abab962e09fec9a4b7d6f760ec9db.png?1772686208?bc=0",
+            "file_size": 169403,
+            "file_size_display": "165 KB"
+          }
+        },
+        "embed": null,
+        "attachment": null,
+        "metadata": null,
+        "id": 44157948,
+        "base_class": "Block",
+        "class": "Link",
+        "user": {
+          "created_at": "2022-03-22T18:52:12.868Z",
+          "slug": "aaryan-pashine",
+          "username": "Aaryan Pashine",
+          "first_name": "Aaryan",
+          "last_name": "Pashine",
+          "full_name": "Aaryan Pashine",
+          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "avatar_image": {
+            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
+          },
+          "channel_count": 788,
+          "following_count": 269,
+          "profile_id": 1491607,
+          "follower_count": 80,
+          "initials": "AP",
+          "can_index": true,
+          "metadata": {
+            "description": null
+          },
+          "is_premium": true,
+          "is_lifetime_premium": false,
+          "is_supporter": false,
+          "is_exceeding_connections_limit": false,
+          "is_confirmed": true,
+          "is_pending_reconfirmation": false,
+          "is_pending_confirmation": false,
+          "badge": "premium",
+          "id": 353398,
+          "base_class": "User",
+          "class": "User"
+        },
+        "position": 3,
+        "selected": false,
+        "connection_id": 92922161,
+        "connected_at": "2026-03-05T04:50:05.253Z",
+        "connected_by_user_id": 353398,
+        "connected_by_username": "Aaryan Pashine",
+        "connected_by_user_slug": "aaryan-pashine"
+      },
+      {
+        "title": "fn-roll.mp4",
+        "updated_at": "2026-03-05T04:56:36.121Z",
+        "created_at": "2026-03-05T04:56:34.224Z",
+        "state": "available",
+        "comment_count": 0,
+        "generated_title": "fn-roll.mp4",
+        "content_html": null,
+        "description_html": "",
+        "visibility": "public",
+        "content": null,
+        "description": "",
+        "source": null,
+        "image": {
+          "filename": "2fa66d98e33f5bdc20260305-2-qyxxcn.png",
+          "content_type": "image/png",
+          "updated_at": "2026-03-05T04:56:36.071Z",
+          "thumb": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODAyNi9vcmlnaW5hbF8yZmE2NmQ5OGUzM2Y1YmRjMjAyNjAzMDUtMi1xeXh4Y24ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MDAsImhlaWdodCI6NDAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
+          },
+          "square": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODAyNi9vcmlnaW5hbF8yZmE2NmQ5OGUzM2Y1YmRjMjAyNjAzMDUtMi1xeXh4Y24ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0NDAsImhlaWdodCI6NDQwLCJmaXQiOiJjb3ZlciIsIndpdGhvdXRFbmxhcmdlbWVudCI6ZmFsc2V9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
+          },
+          "display": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODAyNi9vcmlnaW5hbF8yZmE2NmQ5OGUzM2Y1YmRjMjAyNjAzMDUtMi1xeXh4Y24ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjEyMDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "large": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODAyNi9vcmlnaW5hbF8yZmE2NmQ5OGUzM2Y1YmRjMjAyNjAzMDUtMi1xeXh4Y24ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxODAwLCJoZWlnaHQiOjE4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "original": {
+            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44158026/original_2fa66d98e33f5bdc20260305-2-qyxxcn.png?1772686596?bc=0",
+            "file_size": 38482,
+            "file_size_display": "711 KB"
+          }
+        },
+        "embed": null,
+        "attachment": {
+          "file_name": "5072a4caa633387aac04aa56ce57c75f.mp4",
+          "file_size": 727976,
+          "file_size_display": "711 KB",
+          "content_type": "video/mp4",
+          "extension": "mp4",
+          "url": "https://attachments.are.na/44158026/5072a4caa633387aac04aa56ce57c75f.mp4?1772686595"
+        },
+        "metadata": null,
+        "id": 44158026,
+        "base_class": "Block",
+        "class": "Attachment",
+        "user": {
+          "created_at": "2022-03-22T18:52:12.868Z",
+          "slug": "aaryan-pashine",
+          "username": "Aaryan Pashine",
+          "first_name": "Aaryan",
+          "last_name": "Pashine",
+          "full_name": "Aaryan Pashine",
+          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "avatar_image": {
+            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
+          },
+          "channel_count": 788,
+          "following_count": 269,
+          "profile_id": 1491607,
+          "follower_count": 80,
+          "initials": "AP",
+          "can_index": true,
+          "metadata": {
+            "description": null
+          },
+          "is_premium": true,
+          "is_lifetime_premium": false,
+          "is_supporter": false,
+          "is_exceeding_connections_limit": false,
+          "is_confirmed": true,
+          "is_pending_reconfirmation": false,
+          "is_pending_confirmation": false,
+          "badge": "premium",
+          "id": 353398,
+          "base_class": "User",
+          "class": "User"
+        },
+        "position": 4,
+        "selected": false,
+        "connection_id": 92922327,
+        "connected_at": "2026-03-05T04:56:34.234Z",
+        "connected_by_user_id": 353398,
+        "connected_by_username": "Aaryan Pashine",
+        "connected_by_user_slug": "aaryan-pashine"
+      },
+      {
+        "title": "1_centrifugal_poster.jpg",
+        "updated_at": "2026-03-05T05:04:53.842Z",
+        "created_at": "2026-03-05T04:49:42.896Z",
+        "state": "available",
+        "comment_count": 0,
+        "generated_title": "1_centrifugal_poster.jpg",
+        "content_html": "<p>textre t</p>\n\n<p>n speed : .<br>\ntype rendering IDrocesses'.D s working with parametric</p>\n\n<p>~ uny  passS<br>\nThis poster series is showcase of what is form making</p>\n\n<h1>processes are possible for this typeface.</h1>",
+        "description_html": "",
+        "visibility": "public",
+        "content": "textre t\n\nn speed : .\ntype rendering IDrocesses'.D s working with parametric\n\n~ uny  passS\nThis poster series is showcase of what is form making\n\nprocesses are possible for this typeface.\n=\n",
+        "description": "",
+        "source": null,
+        "image": {
+          "filename": "99c805b79423fe1d80e27da551b6436d.jpg",
+          "content_type": "image/jpeg",
+          "updated_at": "2026-03-05T04:49:44.350Z",
+          "thumb": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0Mi9vcmlnaW5hbF85OWM4MDViNzk0MjNmZTFkODBlMjdkYTU1MWI2NDM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "square": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0Mi9vcmlnaW5hbF85OWM4MDViNzk0MjNmZTFkODBlMjdkYTU1MWI2NDM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "display": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0Mi9vcmlnaW5hbF85OWM4MDViNzk0MjNmZTFkODBlMjdkYTU1MWI2NDM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "large": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0Mi9vcmlnaW5hbF85OWM4MDViNzk0MjNmZTFkODBlMjdkYTU1MWI2NDM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
+          },
+          "original": {
+            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44157942/original_99c805b79423fe1d80e27da551b6436d.jpg?1772686184?bc=0",
+            "file_size": 678790,
+            "file_size_display": "663 KB"
+          }
+        },
+        "embed": null,
+        "attachment": null,
+        "metadata": {
+          "automated_nsfw": "false"
+        },
+        "id": 44157942,
+        "base_class": "Block",
+        "class": "Image",
+        "user": {
+          "created_at": "2022-03-22T18:52:12.868Z",
+          "slug": "aaryan-pashine",
+          "username": "Aaryan Pashine",
+          "first_name": "Aaryan",
+          "last_name": "Pashine",
+          "full_name": "Aaryan Pashine",
+          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "avatar_image": {
+            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
+          },
+          "channel_count": 788,
+          "following_count": 269,
+          "profile_id": 1491607,
+          "follower_count": 80,
+          "initials": "AP",
+          "can_index": true,
+          "metadata": {
+            "description": null
+          },
+          "is_premium": true,
+          "is_lifetime_premium": false,
+          "is_supporter": false,
+          "is_exceeding_connections_limit": false,
+          "is_confirmed": true,
+          "is_pending_reconfirmation": false,
+          "is_pending_confirmation": false,
+          "badge": "premium",
+          "id": 353398,
+          "base_class": "User",
+          "class": "User"
+        },
+        "position": 5,
+        "selected": false,
+        "connection_id": 92922152,
+        "connected_at": "2026-03-05T04:49:42.968Z",
+        "connected_by_user_id": 353398,
+        "connected_by_username": "Aaryan Pashine",
+        "connected_by_user_slug": "aaryan-pashine"
+      },
+      {
+        "title": "hogaya.mp4",
+        "updated_at": "2026-03-05T05:06:23.404Z",
+        "created_at": "2026-03-05T05:06:20.773Z",
+        "state": "available",
+        "comment_count": 0,
+        "generated_title": "hogaya.mp4",
+        "content_html": null,
+        "description_html": "",
+        "visibility": "public",
+        "content": null,
+        "description": "",
+        "source": null,
+        "image": {
+          "filename": "7985a9e7c9b751d720260305-2-tvqqj0.png",
+          "content_type": "image/png",
+          "updated_at": "2026-03-05T05:06:23.294Z",
+          "thumb": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODEwNC9vcmlnaW5hbF83OTg1YTllN2M5Yjc1MWQ3MjAyNjAzMDUtMi10dnFxajAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MDAsImhlaWdodCI6NDAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
+          },
+          "square": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODEwNC9vcmlnaW5hbF83OTg1YTllN2M5Yjc1MWQ3MjAyNjAzMDUtMi10dnFxajAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0NDAsImhlaWdodCI6NDQwLCJmaXQiOiJjb3ZlciIsIndpdGhvdXRFbmxhcmdlbWVudCI6ZmFsc2V9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
+          },
+          "display": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODEwNC9vcmlnaW5hbF83OTg1YTllN2M5Yjc1MWQ3MjAyNjAzMDUtMi10dnFxajAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjEyMDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "large": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODEwNC9vcmlnaW5hbF83OTg1YTllN2M5Yjc1MWQ3MjAyNjAzMDUtMi10dnFxajAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxODAwLCJoZWlnaHQiOjE4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "original": {
+            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44158104/original_7985a9e7c9b751d720260305-2-tvqqj0.png?1772687183?bc=0",
+            "file_size": 76423,
+            "file_size_display": "4.34 MB"
+          }
+        },
+        "embed": null,
+        "attachment": {
+          "file_name": "e955aef7426ba953539ce8230fd84310.mp4",
+          "file_size": 4553944,
+          "file_size_display": "4.34 MB",
+          "content_type": "video/mp4",
+          "extension": "mp4",
+          "url": "https://attachments.are.na/44158104/e955aef7426ba953539ce8230fd84310.mp4?1772687182"
+        },
+        "metadata": null,
+        "id": 44158104,
+        "base_class": "Block",
+        "class": "Attachment",
+        "user": {
+          "created_at": "2022-03-22T18:52:12.868Z",
+          "slug": "aaryan-pashine",
+          "username": "Aaryan Pashine",
+          "first_name": "Aaryan",
+          "last_name": "Pashine",
+          "full_name": "Aaryan Pashine",
+          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "avatar_image": {
+            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
+          },
+          "channel_count": 788,
+          "following_count": 269,
+          "profile_id": 1491607,
+          "follower_count": 80,
+          "initials": "AP",
+          "can_index": true,
+          "metadata": {
+            "description": null
+          },
+          "is_premium": true,
+          "is_lifetime_premium": false,
+          "is_supporter": false,
+          "is_exceeding_connections_limit": false,
+          "is_confirmed": true,
+          "is_pending_reconfirmation": false,
+          "is_pending_confirmation": false,
+          "badge": "premium",
+          "id": 353398,
+          "base_class": "User",
+          "class": "User"
+        },
+        "position": 6,
+        "selected": false,
+        "connection_id": 92922507,
+        "connected_at": "2026-03-05T05:06:20.784Z",
+        "connected_by_user_id": 353398,
+        "connected_by_username": "Aaryan Pashine",
+        "connected_by_user_slug": "aaryan-pashine"
+      },
+      {
+        "title": "fn-roll.mp4",
+        "updated_at": "2026-03-05T05:06:24.620Z",
+        "created_at": "2026-03-05T05:04:48.245Z",
+        "state": "available",
+        "comment_count": 0,
+        "generated_title": "fn-roll.mp4",
+        "content_html": null,
+        "description_html": "",
+        "visibility": "public",
+        "content": null,
+        "description": "",
+        "source": null,
+        "image": {
+          "filename": "91d4f7ce950dcbb920260305-2-mk7ls5.png",
+          "content_type": "image/png",
+          "updated_at": "2026-03-05T05:04:53.713Z",
+          "thumb": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODA4OS9vcmlnaW5hbF85MWQ0ZjdjZTk1MGRjYmI5MjAyNjAzMDUtMi1tazdsczUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MDAsImhlaWdodCI6NDAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
+          },
+          "square": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODA4OS9vcmlnaW5hbF85MWQ0ZjdjZTk1MGRjYmI5MjAyNjAzMDUtMi1tazdsczUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0NDAsImhlaWdodCI6NDQwLCJmaXQiOiJjb3ZlciIsIndpdGhvdXRFbmxhcmdlbWVudCI6ZmFsc2V9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
+          },
+          "display": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODA4OS9vcmlnaW5hbF85MWQ0ZjdjZTk1MGRjYmI5MjAyNjAzMDUtMi1tazdsczUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjEyMDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "large": {
+            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODA4OS9vcmlnaW5hbF85MWQ0ZjdjZTk1MGRjYmI5MjAyNjAzMDUtMi1tazdsczUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxODAwLCJoZWlnaHQiOjE4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
+          },
+          "original": {
+            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44158089/original_91d4f7ce950dcbb920260305-2-mk7ls5.png?1772687093?bc=0",
+            "file_size": 35393,
+            "file_size_display": "1010 KB"
+          }
+        },
+        "embed": null,
+        "attachment": {
+          "file_name": "a5768e99feb12d7a1b2e181c23aaedfa.mp4",
+          "file_size": 1037893,
+          "file_size_display": "1010 KB",
+          "content_type": "video/mp4",
+          "extension": "mp4",
+          "url": "https://attachments.are.na/44158089/a5768e99feb12d7a1b2e181c23aaedfa.mp4?1772687093"
+        },
+        "metadata": null,
+        "id": 44158089,
+        "base_class": "Block",
+        "class": "Attachment",
+        "user": {
+          "created_at": "2022-03-22T18:52:12.868Z",
+          "slug": "aaryan-pashine",
+          "username": "Aaryan Pashine",
+          "first_name": "Aaryan",
+          "last_name": "Pashine",
+          "full_name": "Aaryan Pashine",
+          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "avatar_image": {
+            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
+          },
+          "channel_count": 788,
+          "following_count": 269,
+          "profile_id": 1491607,
+          "follower_count": 80,
+          "initials": "AP",
+          "can_index": true,
+          "metadata": {
+            "description": null
+          },
+          "is_premium": true,
+          "is_lifetime_premium": false,
+          "is_supporter": false,
+          "is_exceeding_connections_limit": false,
+          "is_confirmed": true,
+          "is_pending_reconfirmation": false,
+          "is_pending_confirmation": false,
+          "badge": "premium",
+          "id": 353398,
+          "base_class": "User",
+          "class": "User"
+        },
+        "position": 7,
+        "selected": false,
+        "connection_id": 92922476,
+        "connected_at": "2026-03-05T05:04:48.262Z",
+        "connected_by_user_id": 353398,
+        "connected_by_username": "Aaryan Pashine",
+        "connected_by_user_slug": "aaryan-pashine"
+      }
+    ],
+    "base_class": "Channel",
+    "page": 1,
+    "per": 100,
+    "collaborators": [],
+    "follower_count": 0,
+    "share_link": null,
+    "metadata": {
+      "description": ""
+    },
+    "class_name": "Channel",
+    "can_index": true,
+    "nsfw?": false,
+    "owner": {
+      "created_at": "2023-03-18T23:26:10.906Z",
+      "updated_at": "2023-05-08T19:09:29.269Z",
+      "name": "[a-p] Space",
+      "description": "This is the backend for my website: www.a-p.space\n\"+\" tags\n\"—\" projects\n\"---\" In progress\n\">\" documentation",
+      "visibility": 0,
+      "slug": "a-p-space",
+      "id": 12535,
+      "base_class": "Group",
+      "class": "Group"
+    },
+    "user": {
+      "created_at": "2022-03-22T18:52:12.868Z",
+      "slug": "aaryan-pashine",
+      "username": "Aaryan Pashine",
+      "first_name": "Aaryan",
+      "last_name": "Pashine",
+      "full_name": "Aaryan Pashine",
+      "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+      "avatar_image": {
+        "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+        "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
+      },
+      "channel_count": 788,
+      "following_count": 269,
+      "profile_id": 1491607,
+      "follower_count": 80,
+      "initials": "AP",
+      "can_index": true,
+      "metadata": {
+        "description": null
+      },
+      "is_premium": true,
+      "is_lifetime_premium": false,
+      "is_supporter": false,
+      "is_exceeding_connections_limit": false,
+      "is_confirmed": true,
+      "is_pending_reconfirmation": false,
+      "is_pending_confirmation": false,
+      "badge": "premium",
+      "id": 353398,
+      "base_class": "User",
+      "class": "User"
+    }
+  },
+  {
     "id": 4437502,
     "title": "✱ Altskool Symposium Website",
     "created_at": "2025-11-09T07:00:10.142Z",
@@ -13807,698 +14499,6 @@
         "selected": false,
         "connection_id": 92894616,
         "connected_at": "2026-03-04T19:51:03.626Z",
-        "connected_by_user_id": 353398,
-        "connected_by_username": "Aaryan Pashine",
-        "connected_by_user_slug": "aaryan-pashine"
-      }
-    ],
-    "base_class": "Channel",
-    "page": 1,
-    "per": 100,
-    "collaborators": [],
-    "follower_count": 0,
-    "share_link": null,
-    "metadata": {
-      "description": ""
-    },
-    "class_name": "Channel",
-    "can_index": true,
-    "nsfw?": false,
-    "owner": {
-      "created_at": "2023-03-18T23:26:10.906Z",
-      "updated_at": "2023-05-08T19:09:29.269Z",
-      "name": "[a-p] Space",
-      "description": "This is the backend for my website: www.a-p.space\n\"+\" tags\n\"—\" projects\n\"---\" In progress\n\">\" documentation",
-      "visibility": 0,
-      "slug": "a-p-space",
-      "id": 12535,
-      "base_class": "Group",
-      "class": "Group"
-    },
-    "user": {
-      "created_at": "2022-03-22T18:52:12.868Z",
-      "slug": "aaryan-pashine",
-      "username": "Aaryan Pashine",
-      "first_name": "Aaryan",
-      "last_name": "Pashine",
-      "full_name": "Aaryan Pashine",
-      "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-      "avatar_image": {
-        "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-        "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
-      },
-      "channel_count": 788,
-      "following_count": 269,
-      "profile_id": 1491607,
-      "follower_count": 80,
-      "initials": "AP",
-      "can_index": true,
-      "metadata": {
-        "description": null
-      },
-      "is_premium": true,
-      "is_lifetime_premium": false,
-      "is_supporter": false,
-      "is_exceeding_connections_limit": false,
-      "is_confirmed": true,
-      "is_pending_reconfirmation": false,
-      "is_pending_confirmation": false,
-      "badge": "premium",
-      "id": 353398,
-      "base_class": "User",
-      "class": "User"
-    }
-  },
-  {
-    "id": 4897397,
-    "title": "✱ FN Roll",
-    "created_at": "2026-03-05T04:49:39.332Z",
-    "updated_at": "2026-03-05T05:06:24.620Z",
-    "added_to_at": "2026-03-05T05:06:22.143Z",
-    "published": true,
-    "open": false,
-    "collaboration": false,
-    "collaborator_count": 0,
-    "slug": "fn-roll",
-    "length": 7,
-    "kind": "default",
-    "status": "closed",
-    "user_id": 353398,
-    "manifest": {
-      "key": "uploads/:uuid/${filename}",
-      "AWSAccessKeyId": "AKIAYPX7J2CK5GR4GF5E",
-      "bucket": "https://s3.amazonaws.com/arena_images-temp/",
-      "success_action_status": "201",
-      "policy": "eydleHBpcmF0aW9uJzogJzIwMjYtMDMtMTJUMDU6MDg6MDQuMDAwWicsCiAgICAgICAgJ2NvbmRpdGlvbnMnOiBbCiAgICAgICAgICB7J2J1Y2tldCc6ICdhcmVuYV9pbWFnZXMtdGVtcCd9LAogICAgICAgICAgWydzdGFydHMtd2l0aCcsICcka2V5JywgJyddLAogICAgICAgICAgeydhY2wnOiAncHVibGljLXJlYWQnfSwKICAgICAgICAgIHsnc3VjY2Vzc19hY3Rpb25fc3RhdHVzJzogJzIwMSd9LAogICAgICAgICAgWydjb250ZW50LWxlbmd0aC1yYW5nZScsIDAsIDI2MjE0NDAwMF0sCiAgICAgICAgICBbJ3N0YXJ0cy13aXRoJywnJENvbnRlbnQtVHlwZScsJyddCiAgICAgICAgXQogICAgfQ==",
-      "acl": "public-read",
-      "signature": "qERwRVhtHqC6C0qxWzBNWZa5k1I=",
-      "expires": "2026-03-12T05:08:04.000Z"
-    },
-    "contents": [
-      {
-        "title": "4_centrifugal_poster.jpg",
-        "updated_at": "2026-03-05T04:50:50.672Z",
-        "created_at": "2026-03-05T04:49:42.964Z",
-        "state": "available",
-        "comment_count": 0,
-        "generated_title": "4_centrifugal_poster.jpg",
-        "content_html": "",
-        "description_html": "",
-        "visibility": "public",
-        "content": "",
-        "description": "",
-        "source": null,
-        "image": {
-          "filename": "6c6b4b16acdd3f26de0770a8b23586ec.jpg",
-          "content_type": "image/jpeg",
-          "updated_at": "2026-03-05T04:49:44.708Z",
-          "thumb": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0My9vcmlnaW5hbF82YzZiNGIxNmFjZGQzZjI2ZGUwNzcwYThiMjM1ODZlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "square": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0My9vcmlnaW5hbF82YzZiNGIxNmFjZGQzZjI2ZGUwNzcwYThiMjM1ODZlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "display": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0My9vcmlnaW5hbF82YzZiNGIxNmFjZGQzZjI2ZGUwNzcwYThiMjM1ODZlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
-          },
-          "large": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0My9vcmlnaW5hbF82YzZiNGIxNmFjZGQzZjI2ZGUwNzcwYThiMjM1ODZlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
-          },
-          "original": {
-            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44157943/original_6c6b4b16acdd3f26de0770a8b23586ec.jpg?1772686184?bc=0",
-            "file_size": 1448503,
-            "file_size_display": "1.38 MB"
-          }
-        },
-        "embed": null,
-        "attachment": null,
-        "metadata": {
-          "automated_nsfw": "false"
-        },
-        "id": 44157943,
-        "base_class": "Block",
-        "class": "Image",
-        "user": {
-          "created_at": "2022-03-22T18:52:12.868Z",
-          "slug": "aaryan-pashine",
-          "username": "Aaryan Pashine",
-          "first_name": "Aaryan",
-          "last_name": "Pashine",
-          "full_name": "Aaryan Pashine",
-          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "avatar_image": {
-            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
-          },
-          "channel_count": 788,
-          "following_count": 269,
-          "profile_id": 1491607,
-          "follower_count": 80,
-          "initials": "AP",
-          "can_index": true,
-          "metadata": {
-            "description": null
-          },
-          "is_premium": true,
-          "is_lifetime_premium": false,
-          "is_supporter": false,
-          "is_exceeding_connections_limit": false,
-          "is_confirmed": true,
-          "is_pending_reconfirmation": false,
-          "is_pending_confirmation": false,
-          "badge": "premium",
-          "id": 353398,
-          "base_class": "User",
-          "class": "User"
-        },
-        "position": 1,
-        "selected": false,
-        "connection_id": 92922153,
-        "connected_at": "2026-03-05T04:49:43.010Z",
-        "connected_by_user_id": 353398,
-        "connected_by_username": "Aaryan Pashine",
-        "connected_by_user_slug": "aaryan-pashine"
-      },
-      {
-        "title": "2_centrifugal_poster.jpg",
-        "updated_at": "2026-03-05T04:49:46.372Z",
-        "created_at": "2026-03-05T04:49:42.885Z",
-        "state": "available",
-        "comment_count": 0,
-        "generated_title": "2_centrifugal_poster.jpg",
-        "content_html": "<p>chemical conce<br>\nin the blood</p>",
-        "description_html": "",
-        "visibility": "public",
-        "content": "chemical conce\nin the blood\n\n",
-        "description": "",
-        "source": null,
-        "image": {
-          "filename": "a9b9672eb333e3d764ac34600339df58.jpg",
-          "content_type": "image/jpeg",
-          "updated_at": "2026-03-05T04:49:44.077Z",
-          "thumb": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0MS9vcmlnaW5hbF9hOWI5NjcyZWIzMzNlM2Q3NjRhYzM0NjAwMzM5ZGY1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "square": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0MS9vcmlnaW5hbF9hOWI5NjcyZWIzMzNlM2Q3NjRhYzM0NjAwMzM5ZGY1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "display": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0MS9vcmlnaW5hbF9hOWI5NjcyZWIzMzNlM2Q3NjRhYzM0NjAwMzM5ZGY1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
-          },
-          "large": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0MS9vcmlnaW5hbF9hOWI5NjcyZWIzMzNlM2Q3NjRhYzM0NjAwMzM5ZGY1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
-          },
-          "original": {
-            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44157941/original_a9b9672eb333e3d764ac34600339df58.jpg?1772686184?bc=0",
-            "file_size": 644722,
-            "file_size_display": "630 KB"
-          }
-        },
-        "embed": null,
-        "attachment": null,
-        "metadata": {
-          "automated_nsfw": "false"
-        },
-        "id": 44157941,
-        "base_class": "Block",
-        "class": "Image",
-        "user": {
-          "created_at": "2022-03-22T18:52:12.868Z",
-          "slug": "aaryan-pashine",
-          "username": "Aaryan Pashine",
-          "first_name": "Aaryan",
-          "last_name": "Pashine",
-          "full_name": "Aaryan Pashine",
-          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "avatar_image": {
-            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
-          },
-          "channel_count": 788,
-          "following_count": 269,
-          "profile_id": 1491607,
-          "follower_count": 80,
-          "initials": "AP",
-          "can_index": true,
-          "metadata": {
-            "description": null
-          },
-          "is_premium": true,
-          "is_lifetime_premium": false,
-          "is_supporter": false,
-          "is_exceeding_connections_limit": false,
-          "is_confirmed": true,
-          "is_pending_reconfirmation": false,
-          "is_pending_confirmation": false,
-          "badge": "premium",
-          "id": 353398,
-          "base_class": "User",
-          "class": "User"
-        },
-        "position": 2,
-        "selected": false,
-        "connection_id": 92922151,
-        "connected_at": "2026-03-05T04:49:42.929Z",
-        "connected_by_user_id": 353398,
-        "connected_by_username": "Aaryan Pashine",
-        "connected_by_user_slug": "aaryan-pashine"
-      },
-      {
-        "title": "Home",
-        "updated_at": "2026-03-05T04:50:09.169Z",
-        "created_at": "2026-03-05T04:50:05.244Z",
-        "state": "available",
-        "comment_count": 0,
-        "generated_title": "Home",
-        "content_html": "",
-        "description_html": "",
-        "visibility": "public",
-        "content": "",
-        "description": "",
-        "source": {
-          "url": "https://caizoryan.github.io/fn-specimen/modulator/index.html",
-          "title": "Home",
-          "provider": {
-            "name": "github.io",
-            "url": "caizoryan.github.io"
-          }
-        },
-        "image": {
-          "filename": "c47abab962e09fec9a4b7d6f760ec9db.png",
-          "content_type": "image/png",
-          "updated_at": "2026-03-05T04:50:08.568Z",
-          "thumb": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0OC9vcmlnaW5hbF9jNDdhYmFiOTYyZTA5ZmVjOWE0YjdkNmY3NjBlYzlkYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "square": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0OC9vcmlnaW5hbF9jNDdhYmFiOTYyZTA5ZmVjOWE0YjdkNmY3NjBlYzlkYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "display": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0OC9vcmlnaW5hbF9jNDdhYmFiOTYyZTA5ZmVjOWE0YjdkNmY3NjBlYzlkYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
-          },
-          "large": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0OC9vcmlnaW5hbF9jNDdhYmFiOTYyZTA5ZmVjOWE0YjdkNmY3NjBlYzlkYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
-          },
-          "original": {
-            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44157948/original_c47abab962e09fec9a4b7d6f760ec9db.png?1772686208?bc=0",
-            "file_size": 169403,
-            "file_size_display": "165 KB"
-          }
-        },
-        "embed": null,
-        "attachment": null,
-        "metadata": null,
-        "id": 44157948,
-        "base_class": "Block",
-        "class": "Link",
-        "user": {
-          "created_at": "2022-03-22T18:52:12.868Z",
-          "slug": "aaryan-pashine",
-          "username": "Aaryan Pashine",
-          "first_name": "Aaryan",
-          "last_name": "Pashine",
-          "full_name": "Aaryan Pashine",
-          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "avatar_image": {
-            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
-          },
-          "channel_count": 788,
-          "following_count": 269,
-          "profile_id": 1491607,
-          "follower_count": 80,
-          "initials": "AP",
-          "can_index": true,
-          "metadata": {
-            "description": null
-          },
-          "is_premium": true,
-          "is_lifetime_premium": false,
-          "is_supporter": false,
-          "is_exceeding_connections_limit": false,
-          "is_confirmed": true,
-          "is_pending_reconfirmation": false,
-          "is_pending_confirmation": false,
-          "badge": "premium",
-          "id": 353398,
-          "base_class": "User",
-          "class": "User"
-        },
-        "position": 3,
-        "selected": false,
-        "connection_id": 92922161,
-        "connected_at": "2026-03-05T04:50:05.253Z",
-        "connected_by_user_id": 353398,
-        "connected_by_username": "Aaryan Pashine",
-        "connected_by_user_slug": "aaryan-pashine"
-      },
-      {
-        "title": "fn-roll.mp4",
-        "updated_at": "2026-03-05T04:56:36.121Z",
-        "created_at": "2026-03-05T04:56:34.224Z",
-        "state": "available",
-        "comment_count": 0,
-        "generated_title": "fn-roll.mp4",
-        "content_html": null,
-        "description_html": "",
-        "visibility": "public",
-        "content": null,
-        "description": "",
-        "source": null,
-        "image": {
-          "filename": "2fa66d98e33f5bdc20260305-2-qyxxcn.png",
-          "content_type": "image/png",
-          "updated_at": "2026-03-05T04:56:36.071Z",
-          "thumb": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODAyNi9vcmlnaW5hbF8yZmE2NmQ5OGUzM2Y1YmRjMjAyNjAzMDUtMi1xeXh4Y24ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MDAsImhlaWdodCI6NDAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
-          },
-          "square": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODAyNi9vcmlnaW5hbF8yZmE2NmQ5OGUzM2Y1YmRjMjAyNjAzMDUtMi1xeXh4Y24ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0NDAsImhlaWdodCI6NDQwLCJmaXQiOiJjb3ZlciIsIndpdGhvdXRFbmxhcmdlbWVudCI6ZmFsc2V9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
-          },
-          "display": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODAyNi9vcmlnaW5hbF8yZmE2NmQ5OGUzM2Y1YmRjMjAyNjAzMDUtMi1xeXh4Y24ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjEyMDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "large": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODAyNi9vcmlnaW5hbF8yZmE2NmQ5OGUzM2Y1YmRjMjAyNjAzMDUtMi1xeXh4Y24ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxODAwLCJoZWlnaHQiOjE4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "original": {
-            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44158026/original_2fa66d98e33f5bdc20260305-2-qyxxcn.png?1772686596?bc=0",
-            "file_size": 38482,
-            "file_size_display": "711 KB"
-          }
-        },
-        "embed": null,
-        "attachment": {
-          "file_name": "5072a4caa633387aac04aa56ce57c75f.mp4",
-          "file_size": 727976,
-          "file_size_display": "711 KB",
-          "content_type": "video/mp4",
-          "extension": "mp4",
-          "url": "https://attachments.are.na/44158026/5072a4caa633387aac04aa56ce57c75f.mp4?1772686595"
-        },
-        "metadata": null,
-        "id": 44158026,
-        "base_class": "Block",
-        "class": "Attachment",
-        "user": {
-          "created_at": "2022-03-22T18:52:12.868Z",
-          "slug": "aaryan-pashine",
-          "username": "Aaryan Pashine",
-          "first_name": "Aaryan",
-          "last_name": "Pashine",
-          "full_name": "Aaryan Pashine",
-          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "avatar_image": {
-            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
-          },
-          "channel_count": 788,
-          "following_count": 269,
-          "profile_id": 1491607,
-          "follower_count": 80,
-          "initials": "AP",
-          "can_index": true,
-          "metadata": {
-            "description": null
-          },
-          "is_premium": true,
-          "is_lifetime_premium": false,
-          "is_supporter": false,
-          "is_exceeding_connections_limit": false,
-          "is_confirmed": true,
-          "is_pending_reconfirmation": false,
-          "is_pending_confirmation": false,
-          "badge": "premium",
-          "id": 353398,
-          "base_class": "User",
-          "class": "User"
-        },
-        "position": 4,
-        "selected": false,
-        "connection_id": 92922327,
-        "connected_at": "2026-03-05T04:56:34.234Z",
-        "connected_by_user_id": 353398,
-        "connected_by_username": "Aaryan Pashine",
-        "connected_by_user_slug": "aaryan-pashine"
-      },
-      {
-        "title": "1_centrifugal_poster.jpg",
-        "updated_at": "2026-03-05T05:04:53.842Z",
-        "created_at": "2026-03-05T04:49:42.896Z",
-        "state": "available",
-        "comment_count": 0,
-        "generated_title": "1_centrifugal_poster.jpg",
-        "content_html": "<p>textre t</p>\n\n<p>n speed : .<br>\ntype rendering IDrocesses'.D s working with parametric</p>\n\n<p>~ uny  passS<br>\nThis poster series is showcase of what is form making</p>\n\n<h1>processes are possible for this typeface.</h1>",
-        "description_html": "",
-        "visibility": "public",
-        "content": "textre t\n\nn speed : .\ntype rendering IDrocesses'.D s working with parametric\n\n~ uny  passS\nThis poster series is showcase of what is form making\n\nprocesses are possible for this typeface.\n=\n",
-        "description": "",
-        "source": null,
-        "image": {
-          "filename": "99c805b79423fe1d80e27da551b6436d.jpg",
-          "content_type": "image/jpeg",
-          "updated_at": "2026-03-05T04:49:44.350Z",
-          "thumb": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0Mi9vcmlnaW5hbF85OWM4MDViNzk0MjNmZTFkODBlMjdkYTU1MWI2NDM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "square": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0Mi9vcmlnaW5hbF85OWM4MDViNzk0MjNmZTFkODBlMjdkYTU1MWI2NDM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ0MCwiaGVpZ2h0Ijo0NDAsImZpdCI6ImNvdmVyIiwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "display": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0Mi9vcmlnaW5hbF85OWM4MDViNzk0MjNmZTFkODBlMjdkYTU1MWI2NDM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
-          },
-          "large": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1Nzk0Mi9vcmlnaW5hbF85OWM4MDViNzk0MjNmZTFkODBlMjdkYTU1MWI2NDM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0"
-          },
-          "original": {
-            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44157942/original_99c805b79423fe1d80e27da551b6436d.jpg?1772686184?bc=0",
-            "file_size": 678790,
-            "file_size_display": "663 KB"
-          }
-        },
-        "embed": null,
-        "attachment": null,
-        "metadata": {
-          "automated_nsfw": "false"
-        },
-        "id": 44157942,
-        "base_class": "Block",
-        "class": "Image",
-        "user": {
-          "created_at": "2022-03-22T18:52:12.868Z",
-          "slug": "aaryan-pashine",
-          "username": "Aaryan Pashine",
-          "first_name": "Aaryan",
-          "last_name": "Pashine",
-          "full_name": "Aaryan Pashine",
-          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "avatar_image": {
-            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
-          },
-          "channel_count": 788,
-          "following_count": 269,
-          "profile_id": 1491607,
-          "follower_count": 80,
-          "initials": "AP",
-          "can_index": true,
-          "metadata": {
-            "description": null
-          },
-          "is_premium": true,
-          "is_lifetime_premium": false,
-          "is_supporter": false,
-          "is_exceeding_connections_limit": false,
-          "is_confirmed": true,
-          "is_pending_reconfirmation": false,
-          "is_pending_confirmation": false,
-          "badge": "premium",
-          "id": 353398,
-          "base_class": "User",
-          "class": "User"
-        },
-        "position": 5,
-        "selected": false,
-        "connection_id": 92922152,
-        "connected_at": "2026-03-05T04:49:42.968Z",
-        "connected_by_user_id": 353398,
-        "connected_by_username": "Aaryan Pashine",
-        "connected_by_user_slug": "aaryan-pashine"
-      },
-      {
-        "title": "hogaya.mp4",
-        "updated_at": "2026-03-05T05:06:23.404Z",
-        "created_at": "2026-03-05T05:06:20.773Z",
-        "state": "available",
-        "comment_count": 0,
-        "generated_title": "hogaya.mp4",
-        "content_html": null,
-        "description_html": "",
-        "visibility": "public",
-        "content": null,
-        "description": "",
-        "source": null,
-        "image": {
-          "filename": "7985a9e7c9b751d720260305-2-tvqqj0.png",
-          "content_type": "image/png",
-          "updated_at": "2026-03-05T05:06:23.294Z",
-          "thumb": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODEwNC9vcmlnaW5hbF83OTg1YTllN2M5Yjc1MWQ3MjAyNjAzMDUtMi10dnFxajAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MDAsImhlaWdodCI6NDAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
-          },
-          "square": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODEwNC9vcmlnaW5hbF83OTg1YTllN2M5Yjc1MWQ3MjAyNjAzMDUtMi10dnFxajAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0NDAsImhlaWdodCI6NDQwLCJmaXQiOiJjb3ZlciIsIndpdGhvdXRFbmxhcmdlbWVudCI6ZmFsc2V9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
-          },
-          "display": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODEwNC9vcmlnaW5hbF83OTg1YTllN2M5Yjc1MWQ3MjAyNjAzMDUtMi10dnFxajAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjEyMDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "large": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODEwNC9vcmlnaW5hbF83OTg1YTllN2M5Yjc1MWQ3MjAyNjAzMDUtMi10dnFxajAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxODAwLCJoZWlnaHQiOjE4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "original": {
-            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44158104/original_7985a9e7c9b751d720260305-2-tvqqj0.png?1772687183?bc=0",
-            "file_size": 76423,
-            "file_size_display": "4.34 MB"
-          }
-        },
-        "embed": null,
-        "attachment": {
-          "file_name": "e955aef7426ba953539ce8230fd84310.mp4",
-          "file_size": 4553944,
-          "file_size_display": "4.34 MB",
-          "content_type": "video/mp4",
-          "extension": "mp4",
-          "url": "https://attachments.are.na/44158104/e955aef7426ba953539ce8230fd84310.mp4?1772687182"
-        },
-        "metadata": null,
-        "id": 44158104,
-        "base_class": "Block",
-        "class": "Attachment",
-        "user": {
-          "created_at": "2022-03-22T18:52:12.868Z",
-          "slug": "aaryan-pashine",
-          "username": "Aaryan Pashine",
-          "first_name": "Aaryan",
-          "last_name": "Pashine",
-          "full_name": "Aaryan Pashine",
-          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "avatar_image": {
-            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
-          },
-          "channel_count": 788,
-          "following_count": 269,
-          "profile_id": 1491607,
-          "follower_count": 80,
-          "initials": "AP",
-          "can_index": true,
-          "metadata": {
-            "description": null
-          },
-          "is_premium": true,
-          "is_lifetime_premium": false,
-          "is_supporter": false,
-          "is_exceeding_connections_limit": false,
-          "is_confirmed": true,
-          "is_pending_reconfirmation": false,
-          "is_pending_confirmation": false,
-          "badge": "premium",
-          "id": 353398,
-          "base_class": "User",
-          "class": "User"
-        },
-        "position": 6,
-        "selected": false,
-        "connection_id": 92922507,
-        "connected_at": "2026-03-05T05:06:20.784Z",
-        "connected_by_user_id": 353398,
-        "connected_by_username": "Aaryan Pashine",
-        "connected_by_user_slug": "aaryan-pashine"
-      },
-      {
-        "title": "fn-roll.mp4",
-        "updated_at": "2026-03-05T05:06:24.620Z",
-        "created_at": "2026-03-05T05:04:48.245Z",
-        "state": "available",
-        "comment_count": 0,
-        "generated_title": "fn-roll.mp4",
-        "content_html": null,
-        "description_html": "",
-        "visibility": "public",
-        "content": null,
-        "description": "",
-        "source": null,
-        "image": {
-          "filename": "91d4f7ce950dcbb920260305-2-mk7ls5.png",
-          "content_type": "image/png",
-          "updated_at": "2026-03-05T05:04:53.713Z",
-          "thumb": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODA4OS9vcmlnaW5hbF85MWQ0ZjdjZTk1MGRjYmI5MjAyNjAzMDUtMi1tazdsczUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MDAsImhlaWdodCI6NDAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
-          },
-          "square": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODA4OS9vcmlnaW5hbF85MWQ0ZjdjZTk1MGRjYmI5MjAyNjAzMDUtMi1tazdsczUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0NDAsImhlaWdodCI6NDQwLCJmaXQiOiJjb3ZlciIsIndpdGhvdXRFbmxhcmdlbWVudCI6ZmFsc2V9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19?bc=0"
-          },
-          "display": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODA4OS9vcmlnaW5hbF85MWQ0ZjdjZTk1MGRjYmI5MjAyNjAzMDUtMi1tazdsczUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjEyMDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "large": {
-            "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1ODA4OS9vcmlnaW5hbF85MWQ0ZjdjZTk1MGRjYmI5MjAyNjAzMDUtMi1tazdsczUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxODAwLCJoZWlnaHQiOjE4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=?bc=0"
-          },
-          "original": {
-            "url": "https://d2w9rnfcy7mm78.cloudfront.net/44158089/original_91d4f7ce950dcbb920260305-2-mk7ls5.png?1772687093?bc=0",
-            "file_size": 35393,
-            "file_size_display": "1010 KB"
-          }
-        },
-        "embed": null,
-        "attachment": {
-          "file_name": "a5768e99feb12d7a1b2e181c23aaedfa.mp4",
-          "file_size": 1037893,
-          "file_size_display": "1010 KB",
-          "content_type": "video/mp4",
-          "extension": "mp4",
-          "url": "https://attachments.are.na/44158089/a5768e99feb12d7a1b2e181c23aaedfa.mp4?1772687093"
-        },
-        "metadata": null,
-        "id": 44158089,
-        "base_class": "Block",
-        "class": "Attachment",
-        "user": {
-          "created_at": "2022-03-22T18:52:12.868Z",
-          "slug": "aaryan-pashine",
-          "username": "Aaryan Pashine",
-          "first_name": "Aaryan",
-          "last_name": "Pashine",
-          "full_name": "Aaryan Pashine",
-          "avatar": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "avatar_image": {
-            "thumb": "https://static.avatars.are.na/353398/small_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "display": "https://static.avatars.are.na/353398/medium_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008"
-          },
-          "channel_count": 788,
-          "following_count": 269,
-          "profile_id": 1491607,
-          "follower_count": 80,
-          "initials": "AP",
-          "can_index": true,
-          "metadata": {
-            "description": null
-          },
-          "is_premium": true,
-          "is_lifetime_premium": false,
-          "is_supporter": false,
-          "is_exceeding_connections_limit": false,
-          "is_confirmed": true,
-          "is_pending_reconfirmation": false,
-          "is_pending_confirmation": false,
-          "badge": "premium",
-          "id": 353398,
-          "base_class": "User",
-          "class": "User"
-        },
-        "position": 7,
-        "selected": false,
-        "connection_id": 92922476,
-        "connected_at": "2026-03-05T05:04:48.262Z",
         "connected_by_user_id": 353398,
         "connected_by_username": "Aaryan Pashine",
         "connected_by_user_slug": "aaryan-pashine"
