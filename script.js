@@ -152,40 +152,39 @@ let init = (channels) => {
 	let link = (
 		link,
 		text,
-	) => ["a", { href: link, target: "_blank" }, text];
-
-	let links = [
-		link("https://writing.a-p.space", "Writing"),
-		link("https://feed.a-p.space", "Feed"),
-		link("https://www.are.na/aaryan-pashine/index", "Are.na"),
-		link("https://github.com/caizoryan", "Github"),
-		link("https://www.instagram.com/a____p.jpg/", "Instagram"),
-	];
+		boo = "",
+	) => ["a.link" + boo, { href: link, target: "_blank" }, text];
 
 	let About = [
 		".about",
 		[
-			"p",
-			"Aaryan Pashine (me) is graphic designer and programmer based in Toronto, Canada. His work is focused on exploring new and alternative tools, interfaces, and processes to produce graphics.",
+			"p.big",
+			"Aaryan Pashine ← me → is a graphic designer working with computers based in Toronto, Canada. His work is focused on exploring new and alternative tools, interfaces, and processes to produce graphics.",
 		],
 		[
-			"p",
+			"p.small",
 			"You can also see what I'm upto on my ",
 			link("https://feed.a-p.space", "Feed"),
-			", I also do some ",
-			link("https://writing.a-p.space", "Writing"),
-			" and you can find me on ",
-			link("https://www.are.na/aaryan-pashine/index", "Are.na"),
-			", ",
-
-			link("https://mastodon.social/@caizoryan", "Mastodon"),
-			", ",
-			link("https://github.com/caizoryan", "Github"),
-			", or ",
-			link("https://www.instagram.com/a____p.jpg/", "Instagram"),
 		],
 		[
-			"p",
+			"p.small",
+			"I sometimes ",
+			link("https://writing.a-p.space", "write stuff"),
+		],
+		[
+			"p.small",
+			" Also on ",
+			link("https://www.are.na/aaryan-pashine/index", "Are.na", ".heart"),
+			"/ ",
+
+			link("https://mastodon.social/@caizoryan", "Mastodon"),
+			"/ ",
+			link("https://github.com/caizoryan", "Github"),
+			"/ ",
+			link("https://www.instagram.com/a____p.jpg/", "Instagram", ".boo"),
+		],
+		[
+			"p.tags",
 			...Object.keys(tagData).map((
 				e,
 			) => [

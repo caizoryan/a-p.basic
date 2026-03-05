@@ -1,6 +1,13 @@
 @font-face {
 	font-family: 'hermit';
 	src: url('./fonts/Hermit-Regular.otf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'hermit';
+	src: url('./fonts/Hermit-Bold.otf');
+	font-weight: 600;
 }
 
 @font-face {
@@ -66,6 +73,39 @@ a {
 	font-size: .75em;
 	text-decoration: none;
 	color: var(--link);
+}
+
+a.link {
+	font-size: .85em;
+	/* font-weight: 600; */
+	letter-spacing: .05em;
+	/* text-decoration: underline; */
+}
+
+a.link::before {
+	content: '((';
+	opacity: .15;
+}
+
+a.boo:hover::after {
+	content: ' booo!))';
+	opacity: .25;
+}
+
+a.heart:hover::after {
+	content: ' <3))';
+	opacity: .25;
+}
+
+a.link::after {
+	content: '))';
+	opacity: .15;
+}
+
+a:hover {
+	text-decoration: underline;
+	/* background-color: var(--link); */
+	/* color: var(--background); */
 }
 
 .root {
@@ -316,8 +356,19 @@ h4 {
 	/* grid-template-columns: 46% 20%; */
 }
 
-.about p {
+
+p.big {
+	font-size: 1.2em;
 	margin-bottom: 1.2em;
+}
+
+p.small {
+	margin-bottom: 0;
+	font-size: .9em;
+}
+
+p.tags {
+	margin-top: 1em;
 }
 
 button {
