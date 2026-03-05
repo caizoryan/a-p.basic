@@ -100,6 +100,8 @@ let init = (channels) => {
 				) {
 					count++;
 					imgs.push([".img-container", ["video", {
+						"webkit-playsinline": true,
+						playsinline: true,
 						src: e.attachment.url,
 						autoplay: true,
 						muted: true,
