@@ -1,3 +1,36 @@
+@font-face {
+	font-family: 'hermit';
+	src: url('./fonts/Hermit-Regular.otf');
+}
+
+@font-face {
+	font-family: 'untitled';
+	src: url('./fonts/untitled/bold.otf');
+}
+
+@font-face {
+	font-family: 'suisse';
+	src: url('./fonts/suisse_Regular.otf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'suisse';
+	src: url('./fonts/suisse_SemiBold.otf');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'suisse';
+	src: url('./fonts/suisse_Bold.otf');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'suisse-ital';
+	src: url('./fonts/suisse_RegularItalic.otf');
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -7,9 +40,9 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'suisse', sans-serif;
 	background: #eee;
-
+	font-weight: 300;
 }
 
 p {
@@ -20,8 +53,10 @@ p {
 a {
 	color: black;
 	text-transform: uppercase;
-	font-family: hermit;
+	font-family: 'hermit';
 	font-size: .8em;
+	text-decoration: none;
+	color: blue;
 }
 
 .root {
@@ -40,11 +75,20 @@ a {
 
 .page {
 	position: fixed;
-	right: 1em;
-	top: 1em;
+	left: 1em;
+	top: 19vh;
 	background: white;
 	transition: all 500ms;
-	width: 70vw;
+	width: calc(100vw - 3em);
+}
+
+.scroller {
+	margin-top: 4%;
+	width: 100%;
+	height: 94%;
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 .page[open='false'] {
@@ -56,12 +100,42 @@ a {
 
 .page[open='true'] {
 	pointer-events: auto;
-	overflow-y: scroll;
 	padding: 1em;
 	border: 1px solid black;
-	height: calc(100vh - 2em);
+	height: 80vh;
 	box-shadow: 0 0 50px 55px rgba(0, 0, 0, .1);
 }
+
+.page .buttons {
+	position: absolute;
+	top: 1em;
+	z-index: 99;
+	left: 1em;
+	min-width: min-content;
+	width: 45%;
+	height: min-content;
+}
+
+
+.scroller>.img-container,
+.scroller>.text-container {
+	min-width: 49%;
+	height: 100%;
+	width: 49%;
+	margin-right: 1%;
+}
+
+.scroller .img-container img,
+.scroller .img-container video {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	border: 0px solid black;
+}
+
+
+
 
 .projects[size='xs'] {
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -156,7 +230,7 @@ a {
 h4 {
 	margin-top: .5em;
 	font-weight: 100;
-	font-family: hermit;
+	font-family: 'hermit';
 	/* font-family: ABC ROM Condensed Unlicensed Trial; */
 	font-size: .9em;
 	text-transform: uppercase;
@@ -187,11 +261,15 @@ h4 {
 
 .about {
 	z-index: 2;
-	width: 100vw;
-	height: 50px;
-	margin: 3em .5em 4em .5em;
+	max-width: 70ch;
+	width: 46%;
+	margin: 3em .5em 7em .5em;
 	display: grid;
-	grid-template-columns: 66% 20%;
+	/* grid-template-columns: 46% 20%; */
+}
+
+.about p {
+	margin-bottom: 1.2em;
 }
 
 button {
@@ -222,7 +300,7 @@ h3 {
 
 .img-container {
 	width: 100%;
-	height: min-content;
+	/* height: min-content; */
 	/* filter: grayscale(1); */
 	/* border: 1px solid black; */
 	/* height: 350px; */
@@ -239,6 +317,10 @@ h3 {
 	padding: 0 1em;
 	height: min-content;
 	margin-right: 1em;
+}
+
+.text-container>* {
+	max-width: 62ch;
 }
 
 .invisible {
