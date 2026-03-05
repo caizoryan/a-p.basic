@@ -137,6 +137,16 @@ a {
 	box-shadow: 0 0 50px 55px rgba(0, 0, 0, .1);
 }
 
+.page[open='false']>* {
+	opacity: 0;
+	transition: opacity 800ms;
+}
+
+.page[open='true']>* {
+	opacity: 1;
+	transition: opacity 800ms ease-in-out;
+}
+
 .page .buttons {
 	position: absolute;
 	top: 1em;
@@ -428,6 +438,10 @@ video {
 	.projects[size='xl'],
 	.projects[size='l'] {
 		grid-template-columns: 100%;
+	}
+
+	.page {
+		width: 94vw;
 	}
 
 	.page[open='true'] {
