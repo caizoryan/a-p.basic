@@ -2,53 +2,63 @@ import { dom } from "./dom.js";
 import { memo, reactive } from "./hok.js";
 import { MD } from "./md.js";
 
-let items = [
-	// ["h4", "Index"],
-	// ["h4", "About"],
-	// ["h4", "Work"],
-];
+let items = [];
+let tagData = {};
 
+let tag = reactive("");
 let size = reactive("s");
 let empty = [[".empty"]];
 let page = reactive(empty);
-let scroll = reactive(0);
-page.subscribe((e) => {
-	if (e == empty) scroll.next(0);
-});
 
-let scroller;
-scroll.subscribe((e) => {
-	let w = scroller.getBoundingClientRect().width;
-	let scrollWidth = scroller.scrollWidth;
-	let to = e * w;
-	if (to > scrollWidth) scroll.next((e) => e - .5);
-	else if (to < 0) scroll.next(0);
-	else scroller.scrollLeft = to;
-});
+try {
+	await fetch("./tags.json").then((res) => res.json())
+		.then((res) => tagData = res);
+} catch {
+	console.log("Error");
+}
 
 let init = (channels) => {
 	channels = channels.reverse();
 
 	let slideshow = dom([".slideshow"]);
-	scroller = dom([".scroller", page]);
-	let mainPage = dom([".page", {
-		open: memo(() => page.value() != empty ? "true" : "false", [
-			page,
-		]),
-	}, [
+	let open = memo(() => page.value() != empty ? "true" : "false", [page]);
+
+	let mainPage = dom([
+		".page",
+		{
+			open,
+		},
+		[
 			".buttons",
 			["button", { onclick: () => page.next(empty) }, "close"],
-			["button", { onclick: () => scroll.next((e) => e - .5) }, "←"],
-			["button", { onclick: () => scroll.next((e) => e + .5) }, "→"],
-		], scroller]);
+			// ["button", { onclick: () => scroll.next((e) => e - .5) }, "←"],
+			// ["button", { onclick: () => scroll.next((e) => e + .5) }, "→"],
+		],
+		[".scroller", page],
+	]);
 
 	channels.forEach((e) => {
 		if (!e.title) return;
 		let slide;
 		let projectContents = [];
+		let projectTags = [];
+		Object.entries(tagData).forEach(([key, value]) => {
+			if (value.includes(e.slug)) projectTags.push(key);
+		});
+		let tagged = memo(() => {
+			if (tag.value() == "") return true;
+			else {
+				let ret = false;
+				projectTags.forEach((e) => {
+					if (tag.value() == e) ret = true;
+				});
+				return ret;
+			}
+		}, [tag]);
+
 		let project = [".project", {
+			tagged,
 			onclick: () => {
-				console.log(projectContents);
 				page.next([...projectContents]);
 			},
 			onmouseover: (e) => {
@@ -88,7 +98,6 @@ let init = (channels) => {
 					e.class == "Attachment"
 					// && e.attachment.extension == "mp4"
 				) {
-					console.log(e);
 					count++;
 					imgs.push([".img-container", ["video", {
 						src: e.attachment.url,
@@ -151,12 +160,13 @@ let init = (channels) => {
 		link("https://www.instagram.com/a____p.jpg/", "Instagram"),
 	];
 
-	let tags = ["Websites", "Publications", "Posters", "Campaigns"];
-
-	let About = [".about", [
-		"p",
-		"Aaryan Pashine (me) is graphic designer and programmer based in Toronto, Canada. His work is focused on exploring new and alternative tools, interfaces, and processes to produce graphics.",
-	], [
+	let About = [
+		".about",
+		[
+			"p",
+			"Aaryan Pashine (me) is graphic designer and programmer based in Toronto, Canada. His work is focused on exploring new and alternative tools, interfaces, and processes to produce graphics.",
+		],
+		[
 			"p",
 			"You can also see what I'm upto on my ",
 			link("https://feed.a-p.space", "Feed"),
@@ -171,11 +181,25 @@ let init = (channels) => {
 			link("https://github.com/caizoryan", "Github"),
 			", or ",
 			link("https://www.instagram.com/a____p.jpg/", "Instagram"),
-		], [
+		],
+		[
 			"p",
-			" I make ",
-			...tags.map((e) => ["button", e]),
-		]];
+			...Object.keys(tagData).map((
+				e,
+			) => [
+					"button",
+					{
+						selected: memo(() => tag.value() == e, [tag]),
+						onclick: () => {
+							if (tag.value() == e) {
+								tag.next("");
+							} else tag.next(e);
+						},
+					},
+					e,
+				]),
+		],
+	];
 
 	let Projects = [".projects", { size }, ...items];
 
@@ -184,6 +208,7 @@ let init = (channels) => {
 		About,
 		controls,
 		Projects,
+		[".overlay", { open }],
 		mainPage,
 	);
 	document.body.appendChild(div);

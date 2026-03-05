@@ -1,4 +1,32 @@
 {
+  "All": [
+    "annotated-bibliography-qqcbxlzbovg",
+    "are-na-api-playground",
+    "blood-of-a-god",
+    "observations-ruminations",
+    "deconstructed-typography-poster-o4w_nbct_og",
+    "duckinator-typeface",
+    "piracy-isn-t-theft-naumehfcnec",
+    "portrait-of-an-object-xx8ybiw0mbe",
+    "social-spaces-publication",
+    "too-long-didn-t-listen-at-all-ku55vcrq7w0",
+    "type-classification-publication",
+    "class-archive-website-gd1",
+    "hotmess-2023",
+    "isp-book",
+    "schemata-across-disciplines",
+    "in-sequences-2024",
+    "xkcd-website",
+    "gradex-website-2025",
+    "stories-we-tell-fihhmahs0wg",
+    "interaction-lab-rwe3gynvzg0",
+    "altskool-symposium-website",
+    "s-p-a-architects-website",
+    "brickhaus-menu",
+    "designto-2024",
+    "laura-coombs-guest-lecture",
+    "fn-roll"
+  ],
   "Websites": [
     "laura-coombs-guest-lecture",
     "class-archive-website-gd1",
@@ -8,5 +36,23 @@
     "gradex-website-2025",
     "are-na-api-playground",
     "altskool-symposium-website"
+  ],
+  "Publications": [
+    "brickhaus-menu",
+    "schemata-across-disciplines",
+    "social-spaces-publication",
+    "piracy-isn-t-theft-naumehfcnec",
+    "isp-book",
+    "stories-we-tell-fihhmahs0wg"
+  ],
+  "Systems": [
+    "designto-2024",
+    "altskool-symposium-website",
+    "interaction-lab-rwe3gynvzg0",
+    "duckinator-typeface",
+    "brickhaus-menu",
+    "schemata-across-disciplines",
+    "in-sequences-2024",
+    "fn-roll"
   ]
 }

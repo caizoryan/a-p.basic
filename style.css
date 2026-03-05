@@ -86,19 +86,39 @@ a {
 .page {
 	position: fixed;
 	left: 1em;
-	top: 19vh;
+	top: 1vh;
 	background: var(--background);
 	transition: all 500ms;
-	width: calc(100vw - 3em);
+	width: 60vw;
+	max-width: 800px;
+	z-index: 100;
+	/* width: calc(100vw - 3em); */
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--color);
+	opacity: 0;
+	transition: opacity 400ms ease-in-out;
+	pointer-events: none;
+}
+
+.overlay[open='true'] {
+	opacity: .6;
 }
 
 .scroller {
-	margin-top: 4%;
+	overflow-y: scroll;
+	/* 	margin-top: 4%; */
 	width: 100%;
-	height: 94%;
-	display: flex;
-	overflow-x: scroll;
-	overflow-y: hidden;
+	height: 100%;
+	/* 	display: flex; */
+	/* 	overflow-x: scroll; */
+	/* 	overflow-y: hidden; */
 }
 
 .page[open='false'] {
@@ -111,8 +131,9 @@ a {
 .page[open='true'] {
 	pointer-events: auto;
 	padding: 1em;
+	padding-top: 4em;
 	border: 1px solid var(--color);
-	height: 80vh;
+	height: calc(100vh - 2em);
 	box-shadow: 0 0 50px 55px rgba(0, 0, 0, .1);
 }
 
@@ -120,7 +141,7 @@ a {
 	position: absolute;
 	top: 1em;
 	z-index: 99;
-	left: 1em;
+	left: 1.5em;
 	min-width: min-content;
 	width: 45%;
 	height: min-content;
@@ -129,10 +150,8 @@ a {
 
 .scroller>.img-container,
 .scroller>.text-container {
-	min-width: 49%;
-	height: 100%;
-	width: 49%;
-	margin-right: 1%;
+	padding: 1em;
+	max-width: 750px;
 }
 
 .scroller .img-container img,
@@ -178,6 +197,16 @@ a {
 	transition:
 		background-color 500ms ease-in-out,
 		border 500ms ease-in-out;
+}
+
+.project[tagged='false'] {
+	display: none;
+	position: fixed;
+}
+
+button[selected='true'] {
+	background-color: var(--color);
+	color: var(--background);
 }
 
 .projects[size='xl'] .project {
