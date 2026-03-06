@@ -174,11 +174,11 @@ let init = (channels) => {
 
 	let controls = [
 		".buttons",
-		control("xs", "X"),
+		// control("xs", "X"),
 		control("s", "SML"),
 		control("m", "MED"),
-		control("l", "LRG"),
-		control("xl", "X"),
+		control("xl", "LRG"),
+		// control("xl", "X"),
 	];
 
 	let link = (
