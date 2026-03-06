@@ -32,7 +32,6 @@ let imageViewer = dom([
 	{ open: imageViewerOpen },
 	[".overlay", {
 		open: imageViewerOpen,
-
 		onclick: () => {
 			src.next("");
 			vidsrc.next("");
@@ -242,7 +241,13 @@ let init = (channels) => {
 		About,
 		controls,
 		Projects,
-		[".overlay", { open }],
+		[".overlay", {
+			open,
+			onclick: () => {
+				console.log("clicked");
+				page.next(empty);
+			},
+		}],
 		imageViewer,
 		mainPage,
 	);
