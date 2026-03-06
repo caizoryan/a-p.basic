@@ -20,7 +20,6 @@ try {
 let init = (channels) => {
 	channels = channels.reverse();
 
-	let slideshow = dom([".slideshow"]);
 	let open = memo(() => page.value() != empty ? "true" : "false", [page]);
 
 	let mainPage = dom([
@@ -39,7 +38,6 @@ let init = (channels) => {
 
 	channels.forEach((e) => {
 		if (!e.title) return;
-		let slide;
 		let projectContents = [];
 		let projectTags = [];
 		Object.entries(tagData).forEach(([key, value]) => {
@@ -61,14 +59,6 @@ let init = (channels) => {
 			onclick: () => {
 				page.next([...projectContents]);
 			},
-			onmouseover: (e) => {
-				slideshow.innerHTML = "";
-				slideshow.appendChild(slide);
-			},
-
-			onmouseleave: () => {
-				slideshow.innerHTML = "";
-			},
 		}];
 
 		project.push([
@@ -89,9 +79,9 @@ let init = (channels) => {
 				if (e.class == "Image") {
 					count++;
 					imgs.push([".img-container", ["img", {
+						loading: "lazy",
 						src: e.image.display.url,
 					}]]);
-					slide = dom(["img", { src: e.image.display.url }]);
 				}
 
 				if (
@@ -100,6 +90,7 @@ let init = (channels) => {
 				) {
 					count++;
 					imgs.push([".img-container", ["video", {
+						loading: "lazy",
 						"webkit-playsinline": true,
 						playsinline: true,
 						src: e.attachment.url,
@@ -107,13 +98,6 @@ let init = (channels) => {
 						muted: true,
 						loop: true,
 					}]]);
-
-					slide = dom(["video", {
-						src: e.attachment.url,
-						autoplay: true,
-						muted: true,
-						loop: true,
-					}]);
 				}
 			});
 		}
@@ -159,7 +143,7 @@ let init = (channels) => {
 		".about",
 		[
 			"p.big",
-			"Aaryan Pashine ← me → is a graphic designer working with computers based in Toronto, Canada. His work is focused on exploring new and alternative tools, interfaces, and processes to produce graphics.",
+			"Aaryan Pashine ← me → is a graphic designer and programmer based in Toronto, Canada. His work is focused on exploring new and alternative tools, interfaces, and processes to produce graphics.",
 		],
 		[
 			"p.small",

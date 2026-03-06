@@ -363,7 +363,7 @@ p.big {
 }
 
 p.small {
-	margin-bottom: 0;
+	margin-bottom: .13em;
 	font-size: .9em;
 }
 
