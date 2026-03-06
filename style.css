@@ -147,9 +147,50 @@ a:hover {
 	pointer-events: none;
 }
 
+.image-full {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	overflow: hidden;
+	z-index: 998;
+	opacity: 0;
+}
+
+
 .overlay[open='true'] {
 	opacity: .6;
 }
+
+.image-full[open='true'] {
+	opacity: 1;
+}
+
+.image-full[open='true'] .overlay[open='true'] {
+	pointer-events: auto;
+	background-color: black;
+	opacity: 1;
+}
+
+.image-full img,
+.image-full video {
+	max-width: 90%;
+	max-height: 90%;
+	z-index: 999;
+	border: none;
+	/* display: none; */
+}
+
+/* .image-full[open='true'] video, */
+/* .image-full[open='true'] img { */
+/* 	display: block; */
+/* } */
+
 
 .scroller {
 	overflow-y: scroll;
@@ -236,6 +277,15 @@ a:hover {
 	grid-template-columns: 100%;
 }
 
+.projects .project .img-container img,
+.projects .project .img-container video {
+	pointer-events: none;
+}
+
+.projects[size='xl'] .project .img-container img,
+.projects[size='xl'] .project .img-container video {
+	pointer-events: auto;
+}
 
 .project {
 	padding: .8em;

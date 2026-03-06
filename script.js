@@ -17,6 +17,46 @@ try {
 	console.log("Error");
 }
 
+let src = reactive("");
+let vidsrc = reactive("");
+let imageViewerOpen = memo(() => {
+	if (src.value() != "") return true;
+	if (vidsrc.value() != "") return true;
+	else return false;
+}, [
+	src,
+	vidsrc,
+]);
+let imageViewer = dom([
+	".image-full",
+	{ open: imageViewerOpen },
+	[".overlay", {
+		open: imageViewerOpen,
+
+		onclick: () => {
+			src.next("");
+			vidsrc.next("");
+		},
+	}],
+	["img", {
+		src,
+		style: memo(
+			() => src.value() == "" ? "display: none;" : "display:block;",
+			[src],
+		),
+	}],
+	["video", {
+		style: memo(
+			() => vidsrc.value() == "" ? "display: none;" : "display:block;",
+			[vidsrc],
+		),
+		src: vidsrc,
+		controls: "",
+		muted: "",
+		autoplay: "",
+	}],
+]);
+
 let init = (channels) => {
 	channels = channels.reverse();
 
@@ -69,16 +109,21 @@ let init = (channels) => {
 		let imgs = [];
 		if (e.contents) {
 			let count = 0;
-			let till = 4;
+			let till = 10;
 			// Math.floor(Math.random() * 4) + 2;
 			e.contents.reverse().forEach((e) => {
 				if (count > till) return;
+				if (e.title && e.title == ".ignore") return;
 				if (e.class == "Text") {
 					imgs.push([".text-container", ...MD(e.content)]);
 				}
 				if (e.class == "Image") {
 					count++;
 					imgs.push([".img-container", ["img", {
+						onclick: () => {
+							src.next(e.image.original.url);
+							vidsrc.next("");
+						},
 						loading: "lazy",
 						src: e.image.display.url,
 					}]]);
@@ -90,6 +135,10 @@ let init = (channels) => {
 				) {
 					count++;
 					imgs.push([".img-container", ["video", {
+						onclick: () => {
+							vidsrc.next(e.attachment.url);
+							console.log("set", vidsrc.value());
+						},
 						loading: "lazy",
 						"webkit-playsinline": true,
 						playsinline: true,
@@ -194,6 +243,7 @@ let init = (channels) => {
 		controls,
 		Projects,
 		[".overlay", { open }],
+		imageViewer,
 		mainPage,
 	);
 	document.body.appendChild(div);
