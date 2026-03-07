@@ -184,6 +184,8 @@ a:hover {
 	max-height: 90%;
 	z-index: 999;
 	border: none;
+	width: auto;
+	height: auto;
 	/* display: none; */
 }
 
