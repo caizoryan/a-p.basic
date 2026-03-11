@@ -269,7 +269,7 @@ let init = (channels) => {
 					else tag.next(e);
 				}
 			}, e]
-			) : [['span', ' ... ']], [plusOpen])
+			) : [['span', '']], [plusOpen])
 		],
 	];
 
