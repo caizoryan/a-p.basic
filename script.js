@@ -4,6 +4,8 @@ import { MD } from "./md.js";
 
 let items = [];
 let tagData = {};
+let plusTagData = {};
+let plusOpen = reactive(false)
 
 let tag = reactive("");
 let size = reactive("s");
@@ -12,7 +14,10 @@ let page = reactive(empty);
 
 try {
 	await fetch("./tags.json").then((res) => res.json())
-		.then((res) => tagData = res);
+		.then((res) => {
+		plusTagData = res.plus
+		tagData = res.tags
+	});
 } catch {
 	console.log("Error");
 }
@@ -79,19 +84,30 @@ let init = (channels) => {
 		if (!e.title) return;
 		let projectContents = [];
 		let projectTags = [];
+		let plusTags = []
+		console.log(e.slug)
 		Object.entries(tagData).forEach(([key, value]) => {
 			if (value.includes(e.slug)) projectTags.push(key);
 		});
+
+		Object.entries(plusTagData).forEach(([key, value]) => {
+			if (value.includes(e.slug)) plusTags.push(key);
+		});
+
 		let tagged = memo(() => {
-			if (tag.value() == "") return true;
+			if (plusTags.length > 0 && !plusOpen.value()) return false
+			else if (tag.value() == "") return true;
 			else {
 				let ret = false;
 				projectTags.forEach((e) => {
 					if (tag.value() == e) ret = true;
 				});
+				plusTags.forEach(e => {
+					if (tag.value() == e) ret = true;
+				})
 				return ret;
 			}
-		}, [tag]);
+		}, [tag, plusOpen]);
 
 		let project = [".project", {
 			tagged,
@@ -103,6 +119,15 @@ let init = (channels) => {
 		project.push([
 			".meta", // boxed(["h4", e.title.slice(2)]),
 			["h4", e.title.slice(2)],
+			[
+				".tags",
+				...projectTags
+					.filter((e) => e !== "All")
+					.map(( e, i, a ) => [
+						"span.tag", { title: e },
+						"(" + e.charAt(0) + ")" + (i != a.length - 1 ? ", " : ""),
+					]),
+			],
 		]);
 
 		let imgs = [];
@@ -126,6 +151,10 @@ let init = (channels) => {
 						loading: "lazy",
 						src: e.image.display.url,
 					}]]);
+					if (e.description) {
+						imgs.push(['.caption', e.description])
+						console.log("Block description", e.description)
+					}
 				}
 
 				if (
@@ -142,9 +171,9 @@ let init = (channels) => {
 						"webkit-playsinline": true,
 						playsinline: true,
 						src: e.attachment.url,
-						autoplay: true,
-						muted: true,
-						loop: true,
+						autoplay: '',
+						muted: '',
+						loop: '',
 					}]]);
 				}
 			});
@@ -187,6 +216,7 @@ let init = (channels) => {
 		boo = "",
 	) => ["a.link" + boo, { href: link, target: "_blank" }, text];
 
+
 	let About = [
 		".about",
 		[
@@ -217,20 +247,29 @@ let init = (channels) => {
 		],
 		[
 			"p.tags",
-			...Object.keys(tagData).map((
-				e,
-			) => [
-					"button",
-					{
-						selected: memo(() => tag.value() == e, [tag]),
-						onclick: () => {
-							if (tag.value() == e) {
-								tag.next("");
-							} else tag.next(e);
-						},
-					},
-					e,
-				]),
+			...Object.keys(tagData).map((e) => ["button", {
+				selected: memo(() => tag.value() == e, [tag]),
+				onclick: () => {
+					if (tag.value() == e) tag.next("");
+					else tag.next(e);
+				},
+			}, e]),
+
+			["button", {
+				onclick: () => plusOpen.next(e => !e),
+				selected: memo(() => plusOpen.value() ? 'true' : 'false',[plusOpen])
+			},
+				memo(() => plusOpen.value() ? 'x' : '+',[plusOpen])
+			],
+
+			memo(() => plusOpen.value() ? Object.keys(plusTagData).map(e => 
+			['button', {
+				onclick: () => {
+					if (tag.value() == e) tag.next("");
+					else tag.next(e);
+				}
+			}, e]
+			) : [['span', ' ... ']], [plusOpen])
 		],
 	];
 
