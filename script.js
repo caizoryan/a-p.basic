@@ -62,7 +62,7 @@ let imageViewer = dom([
 ]);
 
 let init = (channels) => {
-	channels = channels.reverse();
+	// channels = channels.reverse();
 
 	let open = memo(() => page.value() != empty ? "true" : "false", [page]);
 
@@ -135,21 +135,23 @@ let init = (channels) => {
 			let count = 0;
 			let till = 10;
 			// Math.floor(Math.random() * 4) + 2;
-			e.contents.reverse().forEach((e) => {
+			e.contents
+				// .reverse()
+				.forEach((e) => {
 				if (count > till) return;
 				if (e.title && e.title == ".ignore") return;
-				if (e.class == "Text") {
-					imgs.push([".text-container", ...MD(e.content)]);
+				if (e.type == "Text") {
+					imgs.push([".text-container", ...MD(e.content.markdown)]);
 				}
-				if (e.class == "Image") {
+				if (e.type == "Image") {
 					count++;
 					imgs.push([".img-container", ["img", {
 						onclick: () => {
-							src.next(e.image.original.url);
+							src.next(e.image.src);
 							vidsrc.next("");
 						},
 						loading: "lazy",
-						src: e.image.display.url,
+						src: e.image.large.src,
 					}]]);
 					if (e.description) {
 						imgs.push(['.caption', e.description])
@@ -158,7 +160,7 @@ let init = (channels) => {
 				}
 
 				if (
-					e.class == "Attachment"
+					e.type == "Attachment"
 					// && e.attachment.extension == "mp4"
 				) {
 					count++;
@@ -292,7 +294,9 @@ let Projects = [".projects", { size }, ...items];
 	document.body.appendChild(div);
 };
 
-fetch("./data.json").then((res) => res.json()).then(init);
+fetch("./data.json")
+	.then((res) => res.json())
+	.then(init);
 
 export const CSSTransform = (x, y, width, height) => {
 	let v = `

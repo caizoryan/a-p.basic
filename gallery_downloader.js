@@ -1,7 +1,7 @@
 import fs from "fs";
 import { get_channel, get_channel_contents, host } from "./arena.js";
 
-fetch(host + "/channels/" + "projects-hlemx_lvnvw/contents?per=60")
+fetch(host + "/channels/" + "projects-hlemx_lvnvw/contents?sort=position_desc&per=60")
 	.then((res) => res.json())
 	.then(async (channel) => {
 		console.log(channel)

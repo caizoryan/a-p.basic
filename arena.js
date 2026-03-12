@@ -1,7 +1,14 @@
+import { auth } from "./auth.js";
+
 export let host = "https://api.are.na/v3/";
 // export let host = "http://localhost:3000/api";
 
-let options = { headers: { cache: "no-store" } };
+let options = { 
+	headers: { 
+		cache: "no-store" ,
+		Authorization: `Bearer ${auth}`
+	} 
+};
 
 let channels = {};
 
@@ -38,7 +45,7 @@ export const get_channel_contents = (slug) => {
 		});
 	}
 
-	return fetch_json(host + "/channels/" + slug + "/contents?per=100", options).then(
+	return fetch_json(host + "/channels/" + slug + "/contents?per=100&sort=position_desc", options).then(
 		(res) => {
 			channels[res.slug] = res;
 			return res;
