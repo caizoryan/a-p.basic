@@ -452,6 +452,10 @@ p.tags {
 	margin-top: 1em;
 }
 
+.tags > * {
+  margin-bottom: .5em;
+}
+
 button {
 	border-radius: 0;
 	padding: .5em;

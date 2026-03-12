@@ -119,15 +119,15 @@ let init = (channels) => {
 		project.push([
 			".meta", // boxed(["h4", e.title.slice(2)]),
 			["h4", e.title.slice(2)],
-			[
-				".tags",
-				...projectTags
-					.filter((e) => e !== "All")
-					.map(( e, i, a ) => [
-						"span.tag", { title: e },
-						"(" + e.charAt(0) + ")" + (i != a.length - 1 ? ", " : ""),
-					]),
-			],
+			// [
+			// 	".tags",
+			// 	...projectTags
+			// 		.filter((e) => e !== "All")
+			// 		.map(( e, i, a ) => [
+			// 			"span.tag", { title: e },
+			// 			"(" + e.charAt(0) + ")" + (i != a.length - 1 ? ", " : ""),
+			// 		]),
+			// ],
 		]);
 
 		let imgs = [];
@@ -272,8 +272,7 @@ let init = (channels) => {
 			) : [['span', '']], [plusOpen])
 		],
 	];
-
-	let Projects = [".projects", { size }, ...items];
+let Projects = [".projects", { size }, ...items];
 
 	let div = dom(
 		".root",

@@ -1,30 +1,38 @@
 import fs from "fs";
-import { get_channel, host } from "./arena.js";
+import { get_channel, get_channel_contents, host } from "./arena.js";
 
-fetch(host + "/channels/" + "projects-hlemx_lvnvw?per=60&force=true")
+fetch(host + "/channels/" + "projects-hlemx_lvnvw/contents?per=60")
 	.then((res) => res.json())
 	.then(async (channel) => {
+		console.log(channel)
 		let projects = [];
-		let projects_fetch = channel.contents;
+		let projects_fetch = channel.data;
 		let tags = { 
 			plus: {},
 			tags: { All: []} 
 		};
 
 		for (let i = 0; i < projects_fetch.length; i++) {
-			await get_channel(projects_fetch[i].id).then((res) => {
-				if (projects_fetch[i].title.includes("[TAG]")) {
-					let tag = projects_fetch[i].title.replace("[TAG] ", "");
-					console.log(res.title);
-					tags.tags[tag] = res.contents.map((e) => e.slug);
-				} else if (projects_fetch[i].title.includes("[+TAG]")) {
-					let tag = projects_fetch[i].title.replace("[+TAG] ", "");
-					console.log(res.title);
-					tags.plus[tag] = res.contents.map((e) => e.slug);
+			let cur = projects_fetch[i]
+			await get_channel_contents(cur.id).then((res) => {
+				if (cur.title.includes("[TAG]")) {
+					let tag = cur.title.replace("[TAG] ", "");
+					console.log(cur.title);
+					if (!res.data) {
+						console.log("NO DATA",res)
+					}
+					tags.tags[tag] = res.data.map((e) => e.slug);
+				} else if (cur.title.includes("[+TAG]")) {
+					let tag = cur.title.replace("[+TAG] ", "");
+					console.log(cur.title);
+					if (!res.data) {
+						console.log("NO DATA",res)
+					}
+					tags.plus[tag] = res.data.map((e) => e.slug);
 				} else {
-					console.log(res.title);
-					tags.tags.All.push(res.slug);
-					projects.push(res);
+					console.log(cur.title);
+					tags.tags.All.push(cur.slug);
+					projects.push({...cur, contents: res.data});
 				}
 			});
 		}

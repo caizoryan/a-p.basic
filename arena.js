@@ -1,4 +1,4 @@
-export let host = "https://api.are.na/v2/";
+export let host = "https://api.are.na/v3/";
 // export let host = "http://localhost:3000/api";
 
 let options = { headers: { cache: "no-store" } };
@@ -24,6 +24,21 @@ export const get_channel = (slug) => {
 	}
 
 	return fetch_json(host + "/channels/" + slug + "?per=100", options).then(
+		(res) => {
+			channels[res.slug] = res;
+			return res;
+		},
+	);
+};
+
+export const get_channel_contents = (slug) => {
+	if (channels[slug]) {
+		return new Promise((resolve, reject) => {
+			resolve(channels[slug]);
+		});
+	}
+
+	return fetch_json(host + "/channels/" + slug + "/contents?per=100", options).then(
 		(res) => {
 			channels[res.slug] = res;
 			return res;
