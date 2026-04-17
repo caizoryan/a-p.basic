@@ -237,8 +237,10 @@ let init = (channels) => {
 		],
 		[
 			"p.small",
-			" Also on ",
 			link("https://www.are.na/aaryan-pashine/index", "Are.na", ".heart"),
+			"/ ",
+
+			link("mailto:pashineaaryan@gmail.com", "Email"),
 			"/ ",
 
 			link("https://mastodon.social/@caizoryan", "Mastodon"),
