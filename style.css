@@ -129,8 +129,8 @@ a:hover {
 	top: 1vh;
 	background: var(--background);
 	transition: all 500ms;
-	width: 60vw;
-	max-width: 800px;
+	left: calc((100vw - 900px) / 2);
+	width: 900px;
 	z-index: 100;
 	/* width: calc(100vw - 3em); */
 }
@@ -245,7 +245,7 @@ a:hover {
 .scroller>.img-container,
 .scroller>.text-container {
 	padding: 1em;
-	max-width: 750px;
+	max-width: 900px;
 }
 
 .scroller .img-container img,
@@ -578,6 +578,7 @@ video {
 
 	.page {
 		width: 94vw;
+		left: 3vw;
 	}
 
 	.page[open='true'] {
