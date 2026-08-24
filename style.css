@@ -39,10 +39,10 @@
 }
 
 :root {
-	--color: #9e6347;
-	--main-background: #f5eedc;
-	--background: #f5eedc;
-	--link: #c79279;
+	--color: #fff;
+	--main-background: #000;
+	--background: #000000;
+	--link: #ff0;
 }
 
 * {
@@ -120,7 +120,7 @@ a:hover {
 	height: 100%;
 	display: grid;
 	cursor: pointer;
-	margin-left: -1em;
+	margin-left: -.25em;
 }
 
 .page {
@@ -129,8 +129,8 @@ a:hover {
 	top: 1vh;
 	background: var(--background);
 	transition: all 500ms;
-	left: calc((100vw - 900px) / 2);
-	width: 900px;
+	left: calc((100vw - 1000px) / 2);
+	width: 1000px;
 	z-index: 100;
 	/* width: calc(100vw - 3em); */
 }
@@ -141,7 +141,7 @@ a:hover {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: var(--color);
+	background-color: var(--background);
 	opacity: 0;
 	transition: opacity 400ms ease-in-out;
 	pointer-events: none;
@@ -164,7 +164,7 @@ a:hover {
 
 
 .overlay[open='true'] {
-	opacity: .6;
+	opacity: .9;
 	pointer-events: auto;
 }
 
@@ -216,7 +216,7 @@ a:hover {
 	pointer-events: auto;
 	padding: 1em;
 	padding-top: 4em;
-	border: 1px solid var(--color);
+	/* border: 1px solid var(--color); */
 	height: calc(100vh - 2em);
 	box-shadow: 0 0 50px 55px rgba(0, 0, 0, .1);
 }
@@ -245,7 +245,7 @@ a:hover {
 .scroller>.img-container,
 .scroller>.text-container {
 	padding: 1em;
-	max-width: 900px;
+	max-width: 1000px;
 }
 
 .scroller .img-container img,
@@ -269,7 +269,7 @@ a:hover {
 }
 
 .projects[size='m'] {
-	grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
 }
 
 .projects[size='l'] {
@@ -283,6 +283,7 @@ a:hover {
 .projects .project .img-container img,
 .projects .project .img-container video {
 	pointer-events: none;
+	border-radius: 8px;
 }
 
 .projects[size='xl'] .project .img-container img,
@@ -291,15 +292,14 @@ a:hover {
 }
 
 .project {
-	padding: .8em;
-	margin: .5em;
-	border: 1px solid #8880;
-	display: grid;
-	grid-template-rows: 48px auto;
+	padding: .25em;
+	margin: .25em;
+	margin-bottom: 2em;
+	/* border: 1px solid #8880; */
+	/* display: grid; */
+	/* grid-template-rows: auto 48px ; */
 	/* border-top: 1px solid #8888; */
-	transition:
-		background-color 500ms ease-in-out,
-		border 500ms ease-in-out;
+	transition: background-color 500ms ease-in-out;
 }
 
 .project[tagged='false'] {
@@ -325,7 +325,7 @@ button[selected='true'] {
 	display: flex;
 	overflow-x: scroll;
 	height: 405px;
-	border-top: 1px solid #2228;
+	/* border-top: 1px solid #2228; */
 }
 
 .projects[size='xl'] .project .meta {
@@ -344,16 +344,22 @@ button[selected='true'] {
 .projects[size='xl'] .project .img-container video {
 	width: auto;
 	height: 100%;
+
 }
 
 .meta {
-	opacity: 0.2;
+	/* opacity: 0.2; */
 	/* color: #2228; */
-	transition: all 500ms ease-in-out;
-	border-bottom: 1px solid var(--color);
+	/* transition: all 500ms ease-in-out; */
+	/* border-bottom: 1px solid var(--color); */
+	font-size: 1em;
 	margin-bottom: .5em;
 	display: flex;
 }
+
+/* .meta h4 { */
+/* 	max-width: 18ch; */
+/* } */
 
 .project .tags {
 	opacity: 0;
@@ -398,12 +404,13 @@ button[selected='true'] {
 }
 
 h4 {
-	font-weight: 100;
-	font-family: 'hermit';
-	/* font-family: ABC ROM Condensed Unlicensed Trial; */
-	font-size: .9em;
-	text-transform: uppercase;
-	letter-spacing: .03em;
+	font-weight: 300;
+	/* font-family: 'hermit'; */
+	/* font-family: ABC ROM Unlicensed Trial; */
+	font-size: 1.8em;
+	margin-top: .1em;
+	/* text-transform: uppercase; */
+	/* letter-spacing: .03em; */
 	margin-bottom: 1em;
 }
 
@@ -430,10 +437,11 @@ h4 {
 
 .about {
 	z-index: 2;
-	max-width: 70ch;
-	width: 46%;
-	margin: 3em .5em 7em .5em;
-	display: grid;
+	max-width: 68%;
+  width: 70ch;
+  margin: 3em .5em 7em 0em;
+  display: grid;
+  font-size: 1.4rem;
 	/* grid-template-columns: 46% 20%; */
 }
 
@@ -521,8 +529,8 @@ h3 {
 	width: 250px;
 	height: 60px;
 	padding: 1em;
-	border: 1px solid var(--color);
-	border: 1px solid #888;
+	/* border: 1px solid var(--color); */
+	/* border: 1px solid #888; */
 	background: var(--background);
 	font-size: .8em;
 }
@@ -531,8 +539,8 @@ h3 {
 	width: 10px;
 	height: 10px;
 	background: var(--background);
-	border: 1px solid var(--color);
-	border: 1px solid #888;
+	/* border: 1px solid var(--color); */
+	/* border: 1px solid #888; */
 }
 
 .medium {
@@ -546,7 +554,7 @@ h3 {
 img,
 video {
 	width: 100%;
-	border: 1px solid var(--color);
+	/* border: 1px solid var(--color); */
 	/* height: 100%; */
 	/* max-height: 100%; */
 }

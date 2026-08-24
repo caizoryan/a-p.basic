@@ -8,7 +8,7 @@ let plusTagData = {};
 let plusOpen = reactive(false)
 
 let tag = reactive("");
-let size = reactive("s");
+let size = reactive("m");
 let empty = [[".empty"]];
 let page = reactive(empty);
 
@@ -116,19 +116,6 @@ let init = (channels) => {
 			},
 		}];
 
-		project.push([
-			".meta", // boxed(["h4", e.title.slice(2)]),
-			["h4", e.title.slice(2)],
-			// [
-			// 	".tags",
-			// 	...projectTags
-			// 		.filter((e) => e !== "All")
-			// 		.map(( e, i, a ) => [
-			// 			"span.tag", { title: e },
-			// 			"(" + e.charAt(0) + ")" + (i != a.length - 1 ? ", " : ""),
-			// 		]),
-			// ],
-		]);
 
 		let imgs = [];
 		if (e.contents) {
@@ -192,6 +179,11 @@ let init = (channels) => {
 		projectContents = imgs;
 
 		project.push(imgMemo);
+
+		project.push([
+			".meta", // boxed(["h4", e.title.slice(2)]),
+			["h4", e.title.slice(2)],
+		]);
 		items.push(project);
 	});
 
@@ -225,63 +217,63 @@ let init = (channels) => {
 			"p.big",
 			"Aaryan Pashine ← me → is a graphic designer and programmer based in Toronto, Canada. His work is focused on exploring new and alternative tools, interfaces, and processes to produce graphics.",
 		],
-		[
-			"p.small",
-			"You can also see what I'm upto on my ",
-			link("https://feed.a-p.space", "Feed"),
-		],
-		[
-			"p.small",
-			"I sometimes ",
-			link("https://writing.a-p.space", "write stuff"),
-		],
-		[
-			"p.small",
-			link("https://www.are.na/aaryan-pashine/index", "Are.na", ".heart"),
-			"/ ",
-
-			link("mailto:pashineaaryan@gmail.com", "Email"),
-			"/ ",
-
-			link("https://mastodon.social/@caizoryan", "Mastodon"),
-			"/ ",
-			link("https://github.com/caizoryan", "Github"),
-			"/ ",
-			link("https://www.instagram.com/a____p.jpg/", "Instagram", ".boo"),
-		],
-		[
-			"p.tags",
-			...Object.keys(tagData).map((e) => ["button", {
-				selected: memo(() => tag.value() == e, [tag]),
-				onclick: () => {
-					if (tag.value() == e) tag.next("");
-					else tag.next(e);
-				},
-			}, e]),
-
-			["button", {
-				onclick: () => plusOpen.next(e => !e),
-				selected: memo(() => plusOpen.value() ? 'true' : 'false',[plusOpen])
-			},
-				memo(() => plusOpen.value() ? 'x' : '+',[plusOpen])
-			],
-
-			memo(() => plusOpen.value() ? Object.keys(plusTagData).map(e => 
-			['button', {
-				onclick: () => {
-					if (tag.value() == e) tag.next("");
-					else tag.next(e);
-				}
-			}, e]
-			) : [['span', '']], [plusOpen])
-		],
+		// [
+		// 	"p.small",
+		// 	"You can also see what I'm upto on my ",
+		// 	link("https://feed.a-p.space", "Feed"),
+		// ],
+		// [
+		// 	"p.small",
+		// 	"I sometimes ",
+		// 	link("https://writing.a-p.space", "write stuff"),
+		// ],
+		// [
+		// 	"p.small",
+		// 	link("https://www.are.na/aaryan-pashine/index", "Are.na", ".heart"),
+		// 	"/ ",
+		//
+		// 	link("mailto:pashineaaryan@gmail.com", "Email"),
+		// 	"/ ",
+		//
+		// 	link("https://mastodon.social/@caizoryan", "Mastodon"),
+		// 	"/ ",
+		// 	link("https://github.com/caizoryan", "Github"),
+		// 	"/ ",
+		// 	link("https://www.instagram.com/a____p.jpg/", "Instagram", ".boo"),
+		// ],
+		// [
+		// 	"p.tags",
+		// 	...Object.keys(tagData).map((e) => ["button", {
+		// 		selected: memo(() => tag.value() == e, [tag]),
+		// 		onclick: () => {
+		// 			if (tag.value() == e) tag.next("");
+		// 			else tag.next(e);
+		// 		},
+		// 	}, e]),
+		//
+		// 	["button", {
+		// 		onclick: () => plusOpen.next(e => !e),
+		// 		selected: memo(() => plusOpen.value() ? 'true' : 'false',[plusOpen])
+		// 	},
+		// 		memo(() => plusOpen.value() ? 'x' : '+',[plusOpen])
+		// 	],
+		//
+		// 	memo(() => plusOpen.value() ? Object.keys(plusTagData).map(e => 
+		// 	['button', {
+		// 		onclick: () => {
+		// 			if (tag.value() == e) tag.next("");
+		// 			else tag.next(e);
+		// 		}
+		// 	}, e]
+		// 	) : [['span', '']], [plusOpen])
+		// ],
 	];
 let Projects = [".projects", { size }, ...items];
 
 	let div = dom(
 		".root",
 		About,
-		controls,
+		// controls,
 		Projects,
 		[".overlay", {
 			open,
