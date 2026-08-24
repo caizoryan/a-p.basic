@@ -1,7 +1,7 @@
 import { auth } from "./auth.js";
 
-export let host = "https://api.are.na/v3/";
-// export let host = "http://localhost:3000/api";
+export let host = "https://api.are.na/v3";
+// export let host = "http://localhost:3001/api";
 
 let options = { 
 	headers: { 
@@ -30,7 +30,9 @@ export const get_channel = (slug) => {
 		});
 	}
 
-	return fetch_json(host + "/channels/" + slug + "?per=100", options).then(
+	let link = host + "/channels/" + slug + "?per=100"
+	console.log(link)
+	return fetch_json(link, options).then(
 		(res) => {
 			channels[res.slug] = res;
 			return res;
@@ -45,7 +47,9 @@ export const get_channel_contents = (slug) => {
 		});
 	}
 
-	return fetch_json(host + "/channels/" + slug + "/contents?per=100&sort=position_desc", options).then(
+	let link = host + "/channels/" + slug + "/contents?per=100&sort=position_desc"	
+	console.log(link)
+	return fetch_json(link, options).then(
 		(res) => {
 			channels[res.slug] = res;
 			return res;
