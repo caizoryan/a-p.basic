@@ -1150,7 +1150,7 @@
         },
         "connection": {
           "id": 93034959,
-          "position": 8,
+          "position": 7,
           "pinned": false,
           "metadata": null,
           "connected_at": "2026-03-06T20:19:27Z",
@@ -1242,98 +1242,6 @@
         },
         "connection": {
           "id": 86354623,
-          "position": 7,
-          "pinned": false,
-          "metadata": null,
-          "connected_at": "2025-11-08T18:15:08Z",
-          "connected_by": {
-            "id": 353398,
-            "type": "User",
-            "name": "Aaryan Pashine",
-            "slug": "aaryan-pashine",
-            "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "initials": "AP",
-            "_links": {
-              "self": {
-                "href": "https://api.are.na/v3/users/aaryan-pashine"
-              }
-            }
-          }
-        }
-      },
-      {
-        "id": 40957412,
-        "type": "Image",
-        "created_at": "2025-11-08T18:15:08Z",
-        "updated_at": "2026-05-24T00:19:35Z",
-        "base_type": "Block",
-        "title": "img_9862.jpg",
-        "description": null,
-        "state": "available",
-        "visibility": "public",
-        "comment_count": 0,
-        "metadata": null,
-        "user": {
-          "id": 353398,
-          "type": "User",
-          "name": "Aaryan Pashine",
-          "slug": "aaryan-pashine",
-          "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "initials": "AP"
-        },
-        "source": null,
-        "image": {
-          "alt_text": null,
-          "blurhash": "LTMZ]%Wr9~xtx[RiM|t7.Te.I9WC",
-          "width": 2847,
-          "height": 3581,
-          "src": "https://d2w9rnfcy7mm78.cloudfront.net/40957412/original_47164b5fcc4c8788e3ca6075b7edd1de.jpg?1762625710",
-          "aspect_ratio": 0.795,
-          "content_type": "image/jpeg",
-          "filename": "47164b5fcc4c8788e3ca6075b7edd1de.jpg",
-          "file_size": 11049907,
-          "updated_at": "2025-11-08T18:15:10Z",
-          "small": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=",
-            "width": 318,
-            "height": 400
-          },
-          "medium": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 954,
-            "height": 1200
-          },
-          "large": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2MDAsImhlaWdodCI6MzYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 1431,
-            "height": 1800
-          },
-          "square": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 954,
-            "height": 1200
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "https://api.are.na/v3/blocks/40957412"
-          },
-          "user": {
-            "href": "https://api.are.na/v3/users/aaryan-pashine"
-          },
-          "connections": {
-            "href": "https://api.are.na/v3/blocks/40957412/connections"
-          },
-          "comments": {
-            "href": "https://api.are.na/v3/blocks/40957412/comments"
-          }
-        },
-        "connection": {
-          "id": 86354624,
           "position": 6,
           "pinned": false,
           "metadata": null,
@@ -1446,6 +1354,98 @@
         }
       },
       {
+        "id": 40957412,
+        "type": "Image",
+        "created_at": "2025-11-08T18:15:08Z",
+        "updated_at": "2026-08-25T15:14:14Z",
+        "base_type": "Block",
+        "title": "img_9862.jpg",
+        "description": null,
+        "state": "available",
+        "visibility": "public",
+        "comment_count": 0,
+        "metadata": null,
+        "user": {
+          "id": 353398,
+          "type": "User",
+          "name": "Aaryan Pashine",
+          "slug": "aaryan-pashine",
+          "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "initials": "AP"
+        },
+        "source": null,
+        "image": {
+          "alt_text": null,
+          "blurhash": "LTMZ]%Wr9~xtx[RiM|t7.Te.I9WC",
+          "width": 2847,
+          "height": 3581,
+          "src": "https://d2w9rnfcy7mm78.cloudfront.net/40957412/original_47164b5fcc4c8788e3ca6075b7edd1de.jpg?1762625710",
+          "aspect_ratio": 0.795,
+          "content_type": "image/jpeg",
+          "filename": "47164b5fcc4c8788e3ca6075b7edd1de.jpg",
+          "file_size": 11049907,
+          "updated_at": "2025-11-08T18:15:10Z",
+          "small": {
+            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=",
+            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=",
+            "width": 318,
+            "height": 400
+          },
+          "medium": {
+            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
+            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
+            "width": 954,
+            "height": 1200
+          },
+          "large": {
+            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
+            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2MDAsImhlaWdodCI6MzYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
+            "width": 1431,
+            "height": 1800
+          },
+          "square": {
+            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
+            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MDk1NzQxMi9vcmlnaW5hbF80NzE2NGI1ZmNjNGM4Nzg4ZTNjYTYwNzViN2VkZDFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
+            "width": 954,
+            "height": 1200
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.are.na/v3/blocks/40957412"
+          },
+          "user": {
+            "href": "https://api.are.na/v3/users/aaryan-pashine"
+          },
+          "connections": {
+            "href": "https://api.are.na/v3/blocks/40957412/connections"
+          },
+          "comments": {
+            "href": "https://api.are.na/v3/blocks/40957412/comments"
+          }
+        },
+        "connection": {
+          "id": 86354624,
+          "position": 4,
+          "pinned": false,
+          "metadata": null,
+          "connected_at": "2025-11-08T18:15:08Z",
+          "connected_by": {
+            "id": 353398,
+            "type": "User",
+            "name": "Aaryan Pashine",
+            "slug": "aaryan-pashine",
+            "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "initials": "AP",
+            "_links": {
+              "self": {
+                "href": "https://api.are.na/v3/users/aaryan-pashine"
+              }
+            }
+          }
+        }
+      },
+      {
         "id": 40957410,
         "type": "Image",
         "created_at": "2025-11-08T18:15:07Z",
@@ -1518,7 +1518,7 @@
         },
         "connection": {
           "id": 86354622,
-          "position": 4,
+          "position": 3,
           "pinned": false,
           "metadata": null,
           "connected_at": "2025-11-08T18:15:07Z",
@@ -1610,7 +1610,7 @@
         },
         "connection": {
           "id": 86354626,
-          "position": 3,
+          "position": 2,
           "pinned": false,
           "metadata": null,
           "connected_at": "2025-11-08T18:15:09Z",
@@ -1710,102 +1710,10 @@
         },
         "connection": {
           "id": 93035060,
-          "position": 2,
-          "pinned": false,
-          "metadata": null,
-          "connected_at": "2026-03-06T20:21:29Z",
-          "connected_by": {
-            "id": 353398,
-            "type": "User",
-            "name": "Aaryan Pashine",
-            "slug": "aaryan-pashine",
-            "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "initials": "AP",
-            "_links": {
-              "self": {
-                "href": "https://api.are.na/v3/users/aaryan-pashine"
-              }
-            }
-          }
-        }
-      },
-      {
-        "id": 42402387,
-        "type": "Image",
-        "created_at": "2026-01-06T02:54:36Z",
-        "updated_at": "2026-03-05T18:35:31Z",
-        "base_type": "Block",
-        "title": "screenshot-2025-11-10-at-3.00.02-pm.png",
-        "description": null,
-        "state": "available",
-        "visibility": "public",
-        "comment_count": 0,
-        "metadata": null,
-        "user": {
-          "id": 353398,
-          "type": "User",
-          "name": "Aaryan Pashine",
-          "slug": "aaryan-pashine",
-          "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "initials": "AP"
-        },
-        "source": null,
-        "image": {
-          "alt_text": null,
-          "blurhash": "LYHxjU-dEBxss:axa#j[4,NO$^Rk",
-          "width": 2214,
-          "height": 1200,
-          "src": "https://d2w9rnfcy7mm78.cloudfront.net/42402387/original_65daff9a8bb700dc3d01bacf7b7073a6.png?1767668077",
-          "aspect_ratio": 1.845,
-          "content_type": "image/png",
-          "filename": "65daff9a8bb700dc3d01bacf7b7073a6.png",
-          "file_size": 3205791,
-          "updated_at": "2026-01-06T02:54:37Z",
-          "small": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjQwMjM4Ny9vcmlnaW5hbF82NWRhZmY5YThiYjcwMGRjM2QwMWJhY2Y3YjcwNzNhNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjQwMjM4Ny9vcmlnaW5hbF82NWRhZmY5YThiYjcwMGRjM2QwMWJhY2Y3YjcwNzNhNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=",
-            "width": 400,
-            "height": 217
-          },
-          "medium": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjQwMjM4Ny9vcmlnaW5hbF82NWRhZmY5YThiYjcwMGRjM2QwMWJhY2Y3YjcwNzNhNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjQwMjM4Ny9vcmlnaW5hbF82NWRhZmY5YThiYjcwMGRjM2QwMWJhY2Y3YjcwNzNhNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 1200,
-            "height": 650
-          },
-          "large": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjQwMjM4Ny9vcmlnaW5hbF82NWRhZmY5YThiYjcwMGRjM2QwMWJhY2Y3YjcwNzNhNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjQwMjM4Ny9vcmlnaW5hbF82NWRhZmY5YThiYjcwMGRjM2QwMWJhY2Y3YjcwNzNhNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2MDAsImhlaWdodCI6MzYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 1800,
-            "height": 976
-          },
-          "square": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjQwMjM4Ny9vcmlnaW5hbF82NWRhZmY5YThiYjcwMGRjM2QwMWJhY2Y3YjcwNzNhNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MjQwMjM4Ny9vcmlnaW5hbF82NWRhZmY5YThiYjcwMGRjM2QwMWJhY2Y3YjcwNzNhNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 1200,
-            "height": 650
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "https://api.are.na/v3/blocks/42402387"
-          },
-          "user": {
-            "href": "https://api.are.na/v3/users/aaryan-pashine"
-          },
-          "connections": {
-            "href": "https://api.are.na/v3/blocks/42402387/connections"
-          },
-          "comments": {
-            "href": "https://api.are.na/v3/blocks/42402387/comments"
-          }
-        },
-        "connection": {
-          "id": 89189134,
           "position": 1,
           "pinned": false,
           "metadata": null,
-          "connected_at": "2026-01-06T02:54:36Z",
+          "connected_at": "2026-03-06T20:21:29Z",
           "connected_by": {
             "id": 353398,
             "type": "User",
@@ -2247,7 +2155,7 @@
         "id": 44152782,
         "type": "Text",
         "created_at": "2026-03-05T00:04:43Z",
-        "updated_at": "2026-08-25T04:50:18Z",
+        "updated_at": "2026-08-25T15:16:56Z",
         "base_type": "Block",
         "title": null,
         "description": null,
@@ -2265,9 +2173,9 @@
         },
         "source": null,
         "content": {
-          "markdown": "Designed and Developed a website for Alternative Practices Symposium hosted by [100m Studios](https://100m.studios) in Toronto, Canada [April 2025] at OCAD University. The symposium discussed alternative ways of engaging with creative practices.\n[LINK](https://alt.100m.studio/)",
-          "html": "<p>Designed and Developed a website for Alternative Practices Symposium hosted by <a href=\"https://100m.studios\" target=\"_blank\" rel=\"nofollow noopener\">100m Studios</a> in Toronto, Canada [April 2025] at OCAD University. The symposium discussed alternative ways of engaging with creative practices.<br>\n<a href=\"https://alt.100m.studio/\" target=\"_blank\" rel=\"nofollow noopener\">LINK</a></p>",
-          "plain": "Designed and Developed a website for Alternative Practices Symposium hosted by 100m Studios (https://100m.studios) in Toronto, Canada [April 2025] at OCAD University. The symposium discussed alternative ways of engaging with creative practices.\nLINK (https://alt.100m.studio/)"
+          "markdown": "Designed and Developed a website for Alternative Practices Symposium hosted by [100m Studios](https://www.are.na/100m-studios-archive/index) in Toronto, Canada [April 2025] at OCAD University. The symposium discussed alternative ways of engaging with creative practices.\n\n[View Project Online ↗](https://alt.100m.studio/)",
+          "html": "<p>Designed and Developed a website for Alternative Practices Symposium hosted by <a href=\"https://www.are.na/100m-studios-archive/index\" target=\"_blank\" rel=\"nofollow noopener\">100m Studios</a> in Toronto, Canada [April 2025] at OCAD University. The symposium discussed alternative ways of engaging with creative practices.</p>\n\n<p><a href=\"https://alt.100m.studio/\" target=\"_blank\" rel=\"nofollow noopener\">View Project Online ↗</a></p>",
+          "plain": "Designed and Developed a website for Alternative Practices Symposium hosted by 100m Studios (https://www.are.na/100m-studios-archive/index) in Toronto, Canada [April 2025] at OCAD University. The symposium discussed alternative ways of engaging with creative practices.\nView Project Online ↗ (https://alt.100m.studio/)"
         },
         "_links": {
           "self": {

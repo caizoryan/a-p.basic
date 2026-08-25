@@ -118,6 +118,8 @@ let init = (channels) => {
 
 
 		let imgs = [];
+		let textContents = [];
+		let fullImageContents = [];
 		if (e.contents) {
 			let count = 0;
 			let till = 10;
@@ -128,22 +130,27 @@ let init = (channels) => {
 				if (count > till) return;
 				if (e.title && e.title == ".ignore") return;
 				if (e.type == "Text") {
-					imgs.push([".text-container", ...MD(e.content.markdown)]);
+					let text = [".text-container", ...MD(e.content.markdown)];
+					textContents.push(text);
+					imgs.push(text);
 				}
 				if (e.type == "Image") {
 					count++;
-					imgs.push([".img-container", ["img", {
+					let image = [".img-container", ["img", {
 						onclick: () => {
 							src.next(e.image.src);
 							vidsrc.next("");
 						},
 						loading: "lazy",
 						src: e.image.large.src,
-					}]]);
+					}]];
+					imgs.push(image);
+
+					let fullImage = [".full-project-image", image];
 					if (e.description) {
-						imgs.push(['.caption', e.description])
-						console.log("Block description", e.description)
+						fullImage.push([".caption", e.description]);
 					}
+					fullImageContents.push(fullImage);
 				}
 
 				if (
@@ -151,10 +158,9 @@ let init = (channels) => {
 					// && e.attachment.extension == "mp4"
 				) {
 					count++;
-					imgs.push([".img-container", ["video", {
+					let video = [".img-container", ["video", {
 						onclick: () => {
 							vidsrc.next(e.attachment.url);
-							console.log("set", vidsrc.value());
 						},
 						loading: "lazy",
 						"webkit-playsinline": true,
@@ -163,7 +169,9 @@ let init = (channels) => {
 						autoplay: '',
 						muted: '',
 						loop: '',
-					}]]);
+					}] ];
+					imgs.push(video);
+					fullImageContents.push([".full-project-image", video]);
 				}
 			});
 		}
@@ -176,7 +184,11 @@ let init = (channels) => {
 			[size],
 		);
 
-		projectContents = imgs;
+		projectContents = [
+			".full-project",
+			[".full-project-text", ...textContents],
+			[".full-project-images", ...fullImageContents],
+		];
 
 		project.push(imgMemo);
 

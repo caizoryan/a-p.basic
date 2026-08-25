@@ -71,8 +71,9 @@ a {
 	text-transform: uppercase;
 	font-family: 'hermit';
 	font-size: .75em;
-	text-decoration: none;
-	color: var(--link);
+	text-decoration: underline;
+	text-underline-offset: .5em;
+	/* color: var(--link); */
 }
 
 a.link {
@@ -82,9 +83,9 @@ a.link {
 	/* border: 1.5px solid white; */
 	font-family: 'suisse', sans-serif;
 	text-transform: lowercase;
+	text-decoration: none;
 	color: white;
 	margin-right: 2.5em;
-	/* text-decoration: underline; */
 }
 
 /* a.link::before { */
@@ -112,7 +113,6 @@ a.heart:hover::after {
 
 a:hover {
 	text-decoration: underline;
-	text-underline-offset: .5em;
 }
 
 .root {
@@ -214,6 +214,7 @@ a:hover {
 	height: 100%;
 	/* 	display: flex; */
 	/* 	overflow-x: scroll; */
+	padding-bottom: 3em;
 	/* 	overflow-y: hidden; */
 }
 
@@ -254,10 +255,39 @@ a:hover {
 /* } */
 
 
-.scroller>.img-container,
-.scroller>.text-container {
+.full-project {
+	width: 100%;
+}
+
+.full-project-text {
 	padding: 1em;
-	max-width: 1000px;
+  margin-top: 2em;
+  font-weight: 300;
+}
+
+.full-project-text .text-container {
+	width: auto;
+  min-width: 0;
+  padding: 0;
+  margin-right: 0;
+  font-size: 1.6em;
+  max-width: 52ch;
+}
+
+.full-project-images {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+	align-items: start;
+}
+
+.full-project-image {
+	min-width: 0;
+	padding: 1em;
+}
+
+.full-project-image .img-container {
+	padding: 0;
 }
 
 .scroller .img-container img,
@@ -512,12 +542,17 @@ button {
   margin-right: .5em;
   outline: none;
   text-decoration: underline;
-  text-underline-offset: .5em;
+	text-underline-offset: .5em;
+ transition: all 350ms;
+}
+
+.buttons button {
+  font-size: 1.2em;
 }
 
 button:hover {
-	background: var(--color);
-	color: var(--background);
+	text-underline-offset: .25em;
+  cursor: pointer;
 }
 
 button[active='true'] {
@@ -601,16 +636,25 @@ video {
 	/* max-height: 100%; */
 }
 
-@media only screen and (max-width: 1000px) {
-	body {
-		font-size: 22px;
+@media only screen and (max-width: 1425px) {
+	.full-project-images {
+		grid-template-columns: 100%;
 	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.root{
+		padding: 0 1em;
+	}
+	/* body { */
+	/* 	font-size: 22px; */
+	/* } */
 
 	button {
 		font-size: 18px;
 	}
 
-	.about {
+	p.big {
 		width: 95%;
 	}
 
@@ -625,14 +669,4 @@ video {
 	.projects[size='l'] {
 		grid-template-columns: 100%;
 	}
-
-	.page {
-		width: 94vw;
-		left: 3vw;
-	}
-
-	.page[open='true'] {
-		width: 94vw;
-	}
-
 }
