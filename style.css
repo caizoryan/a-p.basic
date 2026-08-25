@@ -437,7 +437,7 @@ button[selected='true'] {
 
 
 .bar {
-	z-index: 2;
+	z-index: 250;
   width: 100vw;
   height: 15px;
   display: flex;
