@@ -180,10 +180,7 @@ let init = (channels) => {
 
 		project.push(imgMemo);
 
-		project.push([
-			".meta", // boxed(["h4", e.title.slice(2)]),
-			["h4", e.title.slice(2)],
-		]);
+		project.push([ ".meta", ["h4", e.title.slice(2)]]);
 		items.push(project);
 	});
 
@@ -272,6 +269,16 @@ let Projects = [".projects", { size }, ...items];
 
 	let div = dom(
 		".root",
+		['.bar', 
+		['p.tags', 
+			link("mailto:pashineaaryan@gmail.com", "Email"),
+		 	link("https://feed.a-p.space", "Feed"),
+			link("https://writing.a-p.space", "Writing"),
+			link("https://www.are.na/aaryan-pashine/index", "Are.na", ".heart"),
+			// link("https://mastodon.social/@caizoryan", "Mastodon"),
+			link("https://github.com/caizoryan", "Github"),
+			link("https://www.instagram.com/a____p.jpg/", "Instagram", ".boo"),
+		]],
 		About,
 		// controls,
 		Projects,
