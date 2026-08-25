@@ -14,14 +14,14 @@
     "All": [
       "designto-2024",
       "brickhaus-menu",
-      "fn-roll",
-      "altskool-symposium-website",
       "s-p-a-architects-website",
-      "laura-coombs-guest-lecture",
-      "interaction-lab-rwe3gynvzg0",
-      "stories-we-tell-fihhmahs0wg",
+      "altskool-symposium-website",
+      "fn-roll",
       "gradex-website-2025",
       "xkcd-website",
+      "stories-we-tell-fihhmahs0wg",
+      "laura-coombs-guest-lecture",
+      "interaction-lab-rwe3gynvzg0",
       "in-sequences-2024",
       "schemata-across-disciplines",
       "wave-function-collapse-nzshbxvzgxa",
@@ -64,6 +64,16 @@
       "gradex-website-2025",
       "interaction-lab-rwe3gynvzg0",
       "annotated-bibliography-qqcbxlzbovg"
+    ],
+    "Systems": [
+      "fn-roll",
+      "in-sequences-2024",
+      "schemata-across-disciplines",
+      "brickhaus-menu",
+      "duckinator-typeface",
+      "interaction-lab-rwe3gynvzg0",
+      "altskool-symposium-website",
+      "designto-2024"
     ],
     "Publications": [
       "annotated-bibliography-qqcbxlzbovg",
