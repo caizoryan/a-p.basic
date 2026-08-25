@@ -1049,7 +1049,7 @@
     "id": 4435461,
     "type": "Channel",
     "created_at": "2025-11-08T18:14:48Z",
-    "updated_at": "2026-08-25T04:57:21Z",
+    "updated_at": "2026-08-25T15:14:20Z",
     "slug": "brickhaus-cafe-menu",
     "title": "✱ Brickhaus Cafe Menu",
     "description": null,
@@ -1065,9 +1065,9 @@
       "initials": "[S"
     },
     "counts": {
-      "blocks": 8,
+      "blocks": 7,
       "channels": 0,
-      "contents": 8,
+      "contents": 7,
       "collaborators": 0
     },
     "_links": {
@@ -1357,7 +1357,7 @@
         "id": 40957412,
         "type": "Image",
         "created_at": "2025-11-08T18:15:08Z",
-        "updated_at": "2026-08-25T15:14:14Z",
+        "updated_at": "2026-08-25T18:27:15Z",
         "base_type": "Block",
         "title": "img_9862.jpg",
         "description": null,
@@ -1794,6 +1794,67 @@
       }
     },
     "contents": [
+      {
+        "id": 49835238,
+        "type": "Text",
+        "created_at": "2026-08-25T20:35:59Z",
+        "updated_at": "2026-08-25T20:37:14Z",
+        "base_type": "Block",
+        "title": null,
+        "description": null,
+        "state": "available",
+        "visibility": "public",
+        "comment_count": 0,
+        "metadata": null,
+        "user": {
+          "id": 353398,
+          "type": "User",
+          "name": "Aaryan Pashine",
+          "slug": "aaryan-pashine",
+          "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+          "initials": "AP"
+        },
+        "source": null,
+        "content": {
+          "markdown": "Designed and Developed a website for Salankar Pashine & Associates which is an architecture firm based in Nagpur, India.\n\n[View Project Online](https://salankarpashine.in/)",
+          "html": "<p>Designed and Developed a website for Salankar Pashine &amp; Associates which is an architecture firm based in Nagpur, India.</p>\n\n<p><a href=\"https://salankarpashine.in/\" target=\"_blank\" rel=\"nofollow noopener\">View Project Online</a></p>",
+          "plain": "Designed and Developed a website for Salankar Pashine & Associates which is an architecture firm based in Nagpur, India.\nView Project Online (https://salankarpashine.in/)"
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.are.na/v3/blocks/49835238"
+          },
+          "user": {
+            "href": "https://api.are.na/v3/users/aaryan-pashine"
+          },
+          "connections": {
+            "href": "https://api.are.na/v3/blocks/49835238/connections"
+          },
+          "comments": {
+            "href": "https://api.are.na/v3/blocks/49835238/comments"
+          }
+        },
+        "connection": {
+          "id": 104347482,
+          "position": 4,
+          "pinned": false,
+          "metadata": null,
+          "connected_at": "2026-08-25T20:35:59Z",
+          "connected_by": {
+            "id": 353398,
+            "type": "User",
+            "name": "Aaryan Pashine",
+            "slug": "aaryan-pashine",
+            "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
+            "initials": "AP",
+            "_links": {
+              "self": {
+                "href": "https://api.are.na/v3/users/aaryan-pashine"
+              }
+            }
+          }
+        }
+      },
       {
         "id": 49812474,
         "type": "Image",
@@ -3324,7 +3385,7 @@
     "id": 4897365,
     "type": "Channel",
     "created_at": "2026-03-05T04:36:21Z",
-    "updated_at": "2026-08-25T05:26:39Z",
+    "updated_at": "2026-08-25T15:39:04Z",
     "slug": "stories-we-tell-fihhmahs0wg",
     "title": "✱ Stories We Tell",
     "description": null,
@@ -3340,9 +3401,9 @@
       "initials": "[S"
     },
     "counts": {
-      "blocks": 3,
+      "blocks": 2,
       "channels": 0,
-      "contents": 3,
+      "contents": 2,
       "collaborators": 0
     },
     "_links": {
@@ -3456,7 +3517,7 @@
         },
         "connection": {
           "id": 92921943,
-          "position": 3,
+          "position": 2,
           "pinned": false,
           "metadata": null,
           "connected_at": "2026-03-05T04:42:37Z",
@@ -3548,102 +3609,10 @@
         },
         "connection": {
           "id": 92921944,
-          "position": 2,
-          "pinned": false,
-          "metadata": null,
-          "connected_at": "2026-03-05T04:42:37Z",
-          "connected_by": {
-            "id": 353398,
-            "type": "User",
-            "name": "Aaryan Pashine",
-            "slug": "aaryan-pashine",
-            "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-            "initials": "AP",
-            "_links": {
-              "self": {
-                "href": "https://api.are.na/v3/users/aaryan-pashine"
-              }
-            }
-          }
-        }
-      },
-      {
-        "id": 44157825,
-        "type": "Image",
-        "created_at": "2026-03-05T04:41:06Z",
-        "updated_at": "2026-03-05T04:42:51Z",
-        "base_type": "Block",
-        "title": "screenshot-2026-03-04-at-11.39.52-pm.png",
-        "description": null,
-        "state": "available",
-        "visibility": "public",
-        "comment_count": 0,
-        "metadata": null,
-        "user": {
-          "id": 353398,
-          "type": "User",
-          "name": "Aaryan Pashine",
-          "slug": "aaryan-pashine",
-          "avatar": "https://static.avatars.are.na/353398/large_862ea9f73d62dd54ea6f8830580ddae1.png?1687531008",
-          "initials": "AP"
-        },
-        "source": null,
-        "image": {
-          "alt_text": null,
-          "blurhash": "LrMaE{oL0Ot6kCayf6oetjfkV[ju",
-          "width": 720,
-          "height": 1079,
-          "src": "https://d2w9rnfcy7mm78.cloudfront.net/44157825/original_d57630b45976c7efeb6d7fd19407e29d.png?1772685667",
-          "aspect_ratio": 0.6673,
-          "content_type": "image/png",
-          "filename": "d57630b45976c7efeb6d7fd19407e29d.png",
-          "file_size": 1628310,
-          "updated_at": "2026-03-05T04:41:07Z",
-          "small": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1NzgyNS9vcmlnaW5hbF9kNTc2MzBiNDU5NzZjN2VmZWI2ZDdmZDE5NDA3ZTI5ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1NzgyNS9vcmlnaW5hbF9kNTc2MzBiNDU5NzZjN2VmZWI2ZDdmZDE5NDA3ZTI5ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=",
-            "width": 267,
-            "height": 400
-          },
-          "medium": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1NzgyNS9vcmlnaW5hbF9kNTc2MzBiNDU5NzZjN2VmZWI2ZDdmZDE5NDA3ZTI5ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1NzgyNS9vcmlnaW5hbF9kNTc2MzBiNDU5NzZjN2VmZWI2ZDdmZDE5NDA3ZTI5ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 801,
-            "height": 1200
-          },
-          "large": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1NzgyNS9vcmlnaW5hbF9kNTc2MzBiNDU5NzZjN2VmZWI2ZDdmZDE5NDA3ZTI5ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE4MDAsImhlaWdodCI6MTgwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1NzgyNS9vcmlnaW5hbF9kNTc2MzBiNDU5NzZjN2VmZWI2ZDdmZDE5NDA3ZTI5ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2MDAsImhlaWdodCI6MzYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 1201,
-            "height": 1800
-          },
-          "square": {
-            "src": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1NzgyNS9vcmlnaW5hbF9kNTc2MzBiNDU5NzZjN2VmZWI2ZDdmZDE5NDA3ZTI5ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "src_2x": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0NDE1NzgyNS9vcmlnaW5hbF9kNTc2MzBiNDU5NzZjN2VmZWI2ZDdmZDE5NDA3ZTI5ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==",
-            "width": 801,
-            "height": 1200
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "https://api.are.na/v3/blocks/44157825"
-          },
-          "user": {
-            "href": "https://api.are.na/v3/users/aaryan-pashine"
-          },
-          "connections": {
-            "href": "https://api.are.na/v3/blocks/44157825/connections"
-          },
-          "comments": {
-            "href": "https://api.are.na/v3/blocks/44157825/comments"
-          }
-        },
-        "connection": {
-          "id": 92921897,
           "position": 1,
           "pinned": false,
           "metadata": null,
-          "connected_at": "2026-03-05T04:41:06Z",
+          "connected_at": "2026-03-05T04:42:37Z",
           "connected_by": {
             "id": 353398,
             "type": "User",
@@ -3728,7 +3697,7 @@
         "id": 31842466,
         "type": "Text",
         "created_at": "2024-10-31T03:19:11Z",
-        "updated_at": "2026-03-06T20:08:22Z",
+        "updated_at": "2026-08-25T15:43:44Z",
         "base_type": "Block",
         "title": null,
         "description": null,
@@ -3746,9 +3715,9 @@
         },
         "source": null,
         "content": {
-          "markdown": "[Aryaman](https://github.com/aryamancodes/) Made a search engine for XKCD Comics in GO. He asked me nicely to make a frontend for it. The frontend exposes all of the traffic passing through the client and responses from the server.\n\n[LINK](https://xkcd-search.netlify.app/)",
-          "html": "<p><a href=\"https://github.com/aryamancodes/\" target=\"_blank\" rel=\"nofollow noopener\">Aryaman</a> Made a search engine for XKCD Comics in GO. He asked me nicely to make a frontend for it. The frontend exposes all of the traffic passing through the client and responses from the server.</p>\n\n<p><a href=\"https://xkcd-search.netlify.app/\" target=\"_blank\" rel=\"nofollow noopener\">LINK</a></p>",
-          "plain": "Aryaman (https://github.com/aryamancodes/) Made a search engine for XKCD Comics in GO. He asked me nicely to make a frontend for it. The frontend exposes all of the traffic passing through the client and responses from the server.\nLINK (https://xkcd-search.netlify.app/)"
+          "markdown": "Designed and developed a frontend for an XKCD Comics Search Engine which was developed by [Aryaman](https://github.com/aryamancodes/). The frontend reveals it's inner workings by exposing all of the data passing through the website on each keystroke.\n\n[View Project Online](https://xkcd-search.netlify.app/)",
+          "html": "<p>Designed and developed a frontend for an XKCD Comics Search Engine which was developed by <a href=\"https://github.com/aryamancodes/\" target=\"_blank\" rel=\"nofollow noopener\">Aryaman</a>. The frontend reveals it&#39;s inner workings by exposing all of the data passing through the website on each keystroke.</p>\n\n<p><a href=\"https://xkcd-search.netlify.app/\" target=\"_blank\" rel=\"nofollow noopener\">View Project Online</a></p>",
+          "plain": "Designed and developed a frontend for an XKCD Comics Search Engine which was developed by Aryaman (https://github.com/aryamancodes/). The frontend reveals it's inner workings by exposing all of the data passing through the website on each keystroke.\nView Project Online (https://xkcd-search.netlify.app/)"
         },
         "_links": {
           "self": {
@@ -4191,7 +4160,7 @@
         "id": 44176406,
         "type": "Text",
         "created_at": "2026-03-05T19:14:44Z",
-        "updated_at": "2026-03-05T19:15:16Z",
+        "updated_at": "2026-08-25T15:44:01Z",
         "base_type": "Block",
         "title": null,
         "description": null,
@@ -4209,9 +4178,9 @@
         },
         "source": null,
         "content": {
-          "markdown": "Designed the website for OCADU's 2025 graduating cohort alongside [Omama Mahmood](https://omama.garden/portfolio.html) Inspired by the early web and all it's idiosyncrasies.\n\n[LINK](https://2025.ocadu.gd)",
-          "html": "<p>Designed the website for OCADU&#39;s 2025 graduating cohort alongside <a href=\"https://omama.garden/portfolio.html\" target=\"_blank\" rel=\"nofollow noopener\">Omama Mahmood</a> Inspired by the early web and all it&#39;s idiosyncrasies.</p>\n\n<p><a href=\"https://2025.ocadu.gd\" target=\"_blank\" rel=\"nofollow noopener\">LINK</a></p>",
-          "plain": "Designed the website for OCADU's 2025 graduating cohort alongside Omama Mahmood (https://omama.garden/portfolio.html) Inspired by the early web and all it's idiosyncrasies.\nLINK (https://2025.ocadu.gd)"
+          "markdown": "Designed the website for OCADU's 2025 graduating cohort alongside [Omama Mahmood](https://omama.garden/portfolio.html) Inspired by the early web and all it's idiosyncrasies.\n\n[View Project Online](https://2025.ocadu.gd)",
+          "html": "<p>Designed the website for OCADU&#39;s 2025 graduating cohort alongside <a href=\"https://omama.garden/portfolio.html\" target=\"_blank\" rel=\"nofollow noopener\">Omama Mahmood</a> Inspired by the early web and all it&#39;s idiosyncrasies.</p>\n\n<p><a href=\"https://2025.ocadu.gd\" target=\"_blank\" rel=\"nofollow noopener\">View Project Online</a></p>",
+          "plain": "Designed the website for OCADU's 2025 graduating cohort alongside Omama Mahmood (https://omama.garden/portfolio.html) Inspired by the early web and all it's idiosyncrasies.\nView Project Online (https://2025.ocadu.gd)"
         },
         "_links": {
           "self": {

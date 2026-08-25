@@ -47,7 +47,7 @@ export const get_channel_contents = (slug) => {
 		});
 	}
 
-	let link = host + "/channels/" + slug + "/contents?per=100&sort=position_desc"	
+	let link = host + "/channels/" + slug + "/contents?per=100&sort=position_desc&force=true"	
 	console.log(link)
 	return fetch_json(link, options).then(
 		(res) => {
