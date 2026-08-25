@@ -293,7 +293,116 @@ let Projects = [".projects", { size }, ...items];
 		mainPage,
 	);
 	document.body.appendChild(div);
+
+	// Interactive SVG line replacing border-top on .about
+	initAboutLine();
 };
+
+function initAboutLine() {
+	let aboutEl = document.querySelector('.about');
+	if (!aboutEl) return;
+
+	const SVG_NS = "http://www.w3.org/2000/svg";
+	const NUM_POINTS = 80;
+	const MAX_RAISE = 180;
+	const RANGE = 280; // px
+	const LERP_SPEED = 0.08;
+	const SVG_HEIGHT = 60;
+	const BASELINE_Y = SVG_HEIGHT; // bottom of SVG
+
+	let svg = document.createElementNS(SVG_NS, "svg");
+	svg.classList.add("about-line-svg");
+	svg.setAttribute("height", SVG_HEIGHT);
+	aboutEl.prepend(svg);
+
+	let points = [];
+	let polyline = document.createElementNS(SVG_NS, "polyline");
+	svg.appendChild(polyline);
+
+	// let circles = [];
+	for (let i = 0; i < NUM_POINTS; i++) {
+		// let c = document.createElementNS(SVG_NS, "circle");
+		// c.setAttribute("r", "3");
+		// svg.appendChild(c);
+		// circles.push(c);
+		points.push({ x: 0, currentY: BASELINE_Y, targetY: BASELINE_Y });
+	}
+
+	function layout() {
+		let w = svg.getBoundingClientRect().width || svg.parentElement.clientWidth;
+		svg.setAttribute("width", w);
+		for (let i = 0; i < NUM_POINTS; i++) {
+			points[i].x = (i / (NUM_POINTS - 1)) * w;
+		}
+	}
+
+	layout();
+	window.addEventListener("resize", layout);
+
+	let mouseX = -9999;
+	let mouseY = -9999;
+	let rafId = null;
+
+	function onMouseMove(e) {
+		mouseX = e.clientX;
+		mouseY = e.clientY;
+		if (!rafId) rafId = requestAnimationFrame(tick);
+	}
+
+	function tick() {
+		let rect = svg.getBoundingClientRect();
+		let localMouseX = mouseX - rect.left;
+		let localMouseY = mouseY - rect.top;
+
+		let verticallyNear = localMouseY >= (rect.height - RANGE) && localMouseY <= rect.height;
+		let verticalDist = rect.height - localMouseY;
+		let effectiveMaxRaise = Math.min(verticalDist, MAX_RAISE);
+
+		let needsUpdate = false;
+
+		for (let i = 0; i < points.length; i++) {
+			let p = points[i];
+
+			if (verticallyNear) {
+				let dist = Math.abs(localMouseX - p.x);
+				if (dist < RANGE) {
+					let t = dist / RANGE;
+					let factor = Math.exp(-5 * t * t);
+					p.targetY = BASELINE_Y - (effectiveMaxRaise * factor);
+				} else {
+					p.targetY = BASELINE_Y;
+				}
+			} else {
+				p.targetY = BASELINE_Y;
+			}
+
+			p.currentY += (p.targetY - p.currentY) * LERP_SPEED;
+
+			if (Math.abs(p.currentY - p.targetY) > 0.1) {
+				needsUpdate = true;
+			}
+		}
+
+		let pointsStr = points.map(p => `${p.x},${p.currentY}`).join(" ");
+		polyline.setAttribute("points", pointsStr);
+
+		// for (let i = 0; i < points.length; i++) {
+		// 	circles[i].setAttribute("cx", points[i].x);
+		// 	circles[i].setAttribute("cy", points[i].currentY);
+		// }
+
+		if (needsUpdate) {
+			rafId = requestAnimationFrame(tick);
+		} else {
+			rafId = null;
+		}
+	}
+
+	window.addEventListener("mousemove", onMouseMove);
+
+	// Initial draw
+	tick();
+}
 
 fetch("./data.json")
 	.then((res) => res.json())

@@ -111,9 +111,8 @@ a.heart:hover::after {
 /* } */
 
 a:hover {
-	/* text-decoration: underline; */
-	background-color: var(--color);
-	color: var(--background);
+	text-decoration: underline;
+	text-underline-offset: .5em;
 }
 
 .root {
@@ -454,12 +453,33 @@ h4 {
 
 .about {
 	z-index: 2;
-  margin: 8em .5em 7em 0em;
+  margin: 14em .5em 7em 0em;
   display: grid;
-	border-top: 2px solid white;
 	width: 100%;
   font-size: 1.4rem;
+	position: relative;
 	/* grid-template-columns: 46% 20%; */
+}
+
+.about-line-svg {
+	position: absolute;
+	top: -60px;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	overflow: visible;
+	pointer-events: none;
+}
+
+.about-line-svg line,
+.about-line-svg polyline {
+	stroke: white;
+	stroke-width: 2;
+	fill: none;
+}
+
+.about-line-svg circle {
+	fill: white;
 }
 
 
