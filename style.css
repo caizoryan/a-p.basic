@@ -142,7 +142,7 @@ a:hover {
 	/* left: calc((100vw - 1000px) / 2); */
 	width: 100vw;
 		/* 1000px; */
-	z-index: 100;
+	z-index: 400;
 	/* width: calc(100vw - 3em); */
 }
 
