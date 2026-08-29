@@ -315,7 +315,7 @@ function initAboutLine() {
 	if (!aboutEl) return;
 
 	const SVG_NS = "http://www.w3.org/2000/svg";
-	const NUM_POINTS = 80;
+	const NUM_POINTS = 40;
 	const MAX_RAISE = 180;
 	const RANGE = 280; // px
 	const LERP_SPEED = 0.08;
@@ -331,15 +331,7 @@ function initAboutLine() {
 	let polyline = document.createElementNS(SVG_NS, "polyline");
 	svg.appendChild(polyline);
 
-	// let circles = [];
-	for (let i = 0; i < NUM_POINTS; i++) {
-		// let c = document.createElementNS(SVG_NS, "circle");
-		// c.setAttribute("r", "3");
-		// svg.appendChild(c);
-		// circles.push(c);
-		points.push({ x: 0, currentY: BASELINE_Y, targetY: BASELINE_Y });
-	}
-
+	for (let i = 0; i < NUM_POINTS; i++) { points.push({ x: 0, currentY: BASELINE_Y, targetY: BASELINE_Y }); }
 	function layout() {
 		let w = svg.getBoundingClientRect().width || svg.parentElement.clientWidth;
 		svg.setAttribute("width", w);

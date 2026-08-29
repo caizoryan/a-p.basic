@@ -636,13 +636,12 @@ video {
 	/* max-height: 100%; */
 }
 
-@media only screen and (max-width: 1425px) {
+@media only screen and (max-width: 1000px) {
+
 	.full-project-images {
 		grid-template-columns: 100%;
 	}
-}
 
-@media only screen and (max-width: 1000px) {
 	.root{
 		padding: 0 1em;
 	}
