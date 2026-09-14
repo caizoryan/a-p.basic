@@ -62,6 +62,7 @@ let imageViewer = dom([
 ]);
 
 let init = (channels) => {
+	console.log(channels)
 	// channels = channels.reverse();
 
 	let open = memo(() => page.value() != empty ? "true" : "false", [page]);
